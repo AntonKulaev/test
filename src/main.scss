@@ -6,11 +6,30 @@ body * {
   border: 3px solid red;
 }
 
-.gorizont{
-  display: inline-block;
+ul#menu li{
+display: inline-block;
 }
-
 
 .second{
   border: 3px dotted green ;
+}
+
+.third {
+  border: 3px solid red;
+}
+
+.block{
+  display: block;
+}
+
+p#green {
+  color: green;
+}
+
+.fourth{
+  border: 3px solid red;
+}
+
+.fifth{
+  border: 3px double green;
 }
