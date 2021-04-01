@@ -18,8 +18,8 @@ display: inline-block;
   border: 3px solid red;
 }
 
-.block{
-  display: block;
+p#column{
+  
 }
 
 p#green {
@@ -28,8 +28,14 @@ p#green {
 
 .fourth{
   border: 3px solid red;
+  height:;
 }
 
 .fifth{
   border: 3px double green;
+  color: blue;
+}
+
+p#blue{
+  display: inline-block;
 }
