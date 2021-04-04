@@ -41,3 +41,19 @@ a:visited{
  color: rgb(241, 153, 10);
 }
 
+.block {
+  width: 100px;
+  height: 100px;
+  margin: 50px;
+  padding: 50px;
+  border: 10px double green;
+ // box-sizing: border-box;
+  overflow: scroll;
+}
+
+.block-center {
+  width: 50%;
+  height: 60px;
+  margin: 0 auto;
+  border: 10px solid green;
+}
