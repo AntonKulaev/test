@@ -16,7 +16,20 @@ footer {
   background-color: #fb9c06;
 }
 
+.for-columns {
+  display: flex;
+}
+
 .for-columns_item {
- width: 25%;
- display: inline-block;
+  width: 25%;
+  text-align: justify;
+  padding: 5px;
+}
+
+.read-more {
+  color: #fb9c06;
+  text-decoration: none;
+  font-style: italic;
+  text-align: right;
+  display: block;
 }
