@@ -6,8 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="./main.scss">
-  
-
 </head>
 <body>
   <header class="container">
@@ -20,47 +18,28 @@
   </div>
   <main class="container">
    main content
+   <div class="two-columns">
+     <div class="two-columns_item">
+      @@include('./partials/article/_article.html', {"header": "Hello world", "articleText": "First block" })
+     </div>
+     <div class="two-columns_item">
+     @@include('./partials/article/_article.html', {"header": "Hello world", "articleText": "second block" })
+     </div>
+   </div>
+    @@include('./partials/article/_article.html', {"header": "Hello world", "articleText": "third block" })
    <div class="for-columns">
      <div class="for-columns_item">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Odit assumenda nihil consequatur eum pariatur. Vel quisquam
-        natus modi ut magni porro! Optio recusandae iste quod dolorum,
-        laborum pariatur perferendis fuga?
-      </p>
-      <a class="read-more" href="#"> read more...
-      </a>
+      @@include('./partials/article/_article.html', {"header": "Hello world", "articleText": "Lorem block" })
      </div>
      <div class="for-columns_item">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Odit assumenda nihil consequatur eum pariatur. Vel quisquam
-        natus modi ut magni porro! Optio recusandae iste quod dolorum,
-        laborum pariatur perferendis fuga?
-      </p>
-      <a class="read-more" href="#"> read more...
-      </a>
-     </div>
-     <div class="for-columns_item">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Odit assumenda nihil consequatur eum pariatur. Vel quisquam
-        natus modi ut magni porro! Optio recusandae iste quod dolorum,
-        laborum pariatur perferendis fuga?
-      </p>
-      <a class="read-more" href="#"> read more...
-      </a>
-     </div>
-     <div class="for-columns_item">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Odit assumenda nihil consequatur eum pariatur. Vel quisquam
-        natus modi ut magni porro! Optio recusandae iste quod dolorum,
-        laborum pariatur perferendis fuga?
-      </p>
-      <a class="read-more" href="#"> read more...
-      </a>
-     </div>
+      @@include('./partials/article/_article.html', {"header": "Hello world", "articleText": "First block" })
+    </div>
+    <div class="for-columns_item">
+     @@include('./partials/article/_article.html', {"header": "Hello world", "articleText": "fdhhdf block" })
+    </div>
+    <div class="for-columns_item">
+     @@include('./partials/article/_article.html', {"header": "Hello world", "articleText": "First block" })
+    </div>
    </div>
   </main>
   <footer>
