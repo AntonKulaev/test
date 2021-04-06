@@ -18,8 +18,8 @@
   </div>
   <main class="container">
     main content
-   <div class="for-columns">
-     <div class="for-columns_item">
+   <div class="four-columns">
+     <div class="four-columns_item">
       @@include(
         './partials/article/_article.html', 
         {
@@ -27,7 +27,7 @@
         }
       )
      </div>
-     <div class="for-columns_item">
+     <div class="four-columns_item">
       @@include(
         './partials/article/_article.html', 
         {
@@ -35,7 +35,7 @@
         }
       )
     </div>
-    <div class="for-columns_item">
+    <div class="four-columns_item">
      @@include(
        './partials/article/_article.html', 
        {
@@ -43,7 +43,7 @@
         }
       )
     </div>
-    <div class="for-columns_item">
+    <div class="four-columns_item">
      @@include(
        './partials/article/_article.html',
         {
@@ -52,13 +52,21 @@
       )
     </div>
    </div>
-   <div>
-     <div class="float float-right">
-      Float right
+   <section class="section">
+     <header class="header">
+       Meet the team
+     </header>
+     <div class="three-columns">
+       <div class="three-columns_items">1</div>
+       <div class="three-columns_items">2</div>
+       <div class="three-columns_items">3</div>
      </div>
-     <div class="float float-left">
-      Float left 
-     </div>
+   </section>
+   <section class="section">
+    <header class="header dots">
+      Send us a message
+    </header>
+  </section>
    </div>
   </main>
   <footer>

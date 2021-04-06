@@ -1,4 +1,5 @@
 @import "./partials/article/article.scss";
+@import "./partials/teem cart/team cart";
 
 .body {
   margin: 0;
@@ -18,35 +19,36 @@ footer {
   background-color: #fb9c06;
 }
 
-.for-columns {
+.four-columns {
   display: flex;
 }
 
-.for-columns_item {
+.four-columns_item {
   width: 25%;
 }
 
-.two-columns {
+.three-columns {
   display: flex;
 }
 
-.two-columns_item {
-  width: 50%;
+.three-columns_items {
+  width: 33.333%;
+  border: 2px solid red;
+  padding: 0 50px;
 }
 
-.float {
-  border: 1px solid green;
-  width: 150px;
-  height: 150px;
+.header {
+  color: #fb9c06;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 15px;
+  font-size: 26px;
+  text-decoration: underline;
 }
 
-.float-left {
-  float: left;
-  background-color:  blue;
-}
-
-.float-right {
-  float: right;
-  background-color: chartreuse;
+.header.dots:after {
+  content: "...";
+  display: inline-block;
+  text-decoration: underline;
 }
 
