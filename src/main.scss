@@ -50,3 +50,18 @@ footer {
   background-color: chartreuse;
 }
 
+.clearfix:after {
+  content: "after";
+  clear: both;
+  width: 100%;
+  display: block; 
+}
+
+.clearfix:before {
+  content: "before";
+  clear: both;
+  width: 100%;
+  display: block; 
+  height: 100px;
+  background-color: tomato;
+}
