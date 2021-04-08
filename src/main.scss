@@ -33,8 +33,9 @@ footer {
 
 .three-columns_items {
   width: 33.333%;
-  border: 2px solid red;
+  border: 2px solid;
   padding: 0 50px;
+  box-sizing: border-box;
 }
 
 .header {
@@ -42,7 +43,7 @@ footer {
   text-align: center;
   padding-top: 40px;
   padding-bottom: 15px;
-  font-size: 26px;
+  font-size: 40px;
   text-decoration: underline;
 }
 
