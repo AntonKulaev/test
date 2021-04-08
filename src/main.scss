@@ -1,3 +1,42 @@
 body * {
   outline: 1px solid lightgrey;
 }
+
+.border {
+  border: 2px solid blue;
+  width: 481px;
+  height: 698px;
+  padding: 26px 20px 203px 19px ;
+}
+
+.main-content {
+  width: 442px;
+  height: 469px;
+}
+
+.header {
+  width: 199px ;
+  height: 49px ;
+  background-color: rgb(17, 73, 5);
+  display: block; 
+  margin: 0 auto;
+}
+
+.two-bloks {
+ display: inline-block;
+ width: 100%;
+}
+
+.first-item {
+  width: 153px;
+  height: 116px;
+  background-color: rgb(23, 131, 8);
+  display: inline-block;
+}
+
+.second-item {
+  width: 153px;
+  height: 116px;
+  background-color: rgb(23, 131, 8);
+
+}
