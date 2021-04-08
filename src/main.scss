@@ -12,6 +12,7 @@ body * {
 .main-content {
   width: 442px;
   height: 469px;
+  font-size: 0;
 }
 
 .header {
@@ -22,21 +23,64 @@ body * {
   margin: 0 auto;
 }
 
-.two-bloks {
+.two-bloсks {
  display: inline-block;
  width: 100%;
+ font-size: 0;
 }
 
-.first-item {
+.two-bloсks .first-item {
   width: 153px;
   height: 116px;
   background-color: rgb(23, 131, 8);
+  margin: 34px 68px 34px 34px; 
   display: inline-block;
+  font-size: 1rem;
 }
 
-.second-item {
+.two-bloсks .second-item {
   width: 153px;
   height: 116px;
   background-color: rgb(23, 131, 8);
-
+  margin: 34px 34px 34px 0px;
+  display: inline-block;
+  font-size: 1rem;
 }
+
+.three-blocks {
+  width: 100%;
+  font-size: 0;
+  margin: 0;
+}
+
+.three-blocks .red-block {
+  width: 147px ;
+  height: 147px ;
+  background-color: red ;
+  display: inline-block ;
+  font-size: 1rem;
+}
+
+.three-blocks .blue-block {
+  width: 147px;
+  height: 147px;
+  background-color: blue;
+  display: inline-block;
+  font-size: 1rem;
+}
+
+.three-blocks .yellow-block {
+  width: 147px;
+  height: 147px;
+  background-color: yellow;
+  display: inline-block;
+  font-size: 1rem;
+}
+
+.footer {
+  width: 442px;
+  height: 55px;
+  background-color: grey;
+  margin: 34px 0 0 0;
+}
+
