@@ -2,58 +2,39 @@ body * {
   outline: 1px solid lightgrey;
 }
 
-.top{
-  border:2px solid red;
+.container.main-nav{
+  border: 3px solid red;
 }
 
-.bottom{
-  border:2px solid blue;
-}
-
-.top,
-.bottom{
-  width: 40%;
+.container.main-nav li{
   display: inline-block;
 }
 
+.container.sub-menu {
+  border: 3px dotted green ;
+}
+
+.container.blocks {
+  border: 3px solid red;
+}
+
+.container.blocks span {
+display: block;
+}
+
+.container.blocks p{
+  color: green;
+}
+
 .container{
-  padding:15px ;
+  border: 3px solid red;
 }
 
-.bottom.border-green{
-  border: 2px solid green;
-  display: none;
+.container.inline{
+  border: 3px double green;
+  color: blue;
 }
 
-p{
-  color: tomato;
-}
-
-.top p{
-  color: aqua;
-}
-
-.top p:hover{
-  cursor: pointer;
-}
-
-a:visited{
- color: rgb(241, 153, 10);
-}
-
-.block {
-  width: 100px;
-  height: 100px;
-  margin: 50px;
-  padding: 50px;
-  border: 10px double green;
- // box-sizing: border-box;
-  overflow: scroll;
-}
-
-.block-center {
-  width: 50%;
-  height: 60px;
-  margin: 0 auto;
-  border: 10px solid green;
+.container.inline p{
+  display: inline-block;
 }
