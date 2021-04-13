@@ -1,3 +1,107 @@
 body * {
   outline: 1px solid lightgrey;
 }
+
+.section {
+  padding: 50px 0;
+}
+
+.block {
+  height: 200px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.relative {
+  //margin-top: -50px;
+  //margin-left: -50px;
+  position: relative;
+  top: 150px;
+  left: 100px;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.required {
+  font-size: 30px;
+}
+
+.required:after {
+  content: "*";
+  display: inline;
+  color: red;
+  position: relative; 
+  bottom: 5px;
+  left: 5px;
+}
+
+.btn-submit {
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+  top: 0;
+  left: 0;
+  transition: top .5s ease;
+}
+
+.btn-submit:hover {
+  background-color: tomato;
+  top: 15px;
+  left: 15px;
+}
+
+.absolute-wrapper {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.tooltip {
+  position: relative;
+  cursor: pointer;
+  width: 50%;
+}
+
+.tooltip:after {
+  display: inline-block;
+  border: 2px solid lightgray;
+  padding: 5px 10px;
+  border-radius: 7px;
+  position: absolute;
+  bottom: calc(100% + 15px);
+  left: calc(100% - 30px);
+  max-width: 150px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, .5);
+}
+
+.tooltip:hover:before {
+content: '';
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 10px 10px 0 10px;
+border-color: lightgray transparent transparent transparent;
+position: absolute;
+bottom: calc(100% + 7px);
+left: calc(100% - 20px);
+}
+
+.tooltip:hover:after {
+  content: attr(data-tip);
+}
