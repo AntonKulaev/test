@@ -1,88 +1,63 @@
-@import "./sprites.scss";
-
 body * {
   outline: 1px solid lightgrey;
 }
 
-.border {
-  border: 2px solid blue;
-  width: 481px;
-  height: 698px;
-  padding: 26px 20px 203px 19px ;
+.container {
+  max-width: 1200px;
+  padding: 26px 19px 0px 19px;
 }
 
-.main-content {
-  width: 442px;
-  height: 469px;
-  font-size: 0;
-}
-
-.header {
-  width: 199px ;
-  height: 49px ;
-  background-color: rgb(17, 73, 5);
-  display: block; 
+header {
+  width: 33%;
   margin: 0 auto;
+  height: 49px;
+  background-color: rgb(3, 82, 20)
+  ;
 }
 
-.two-bloсks {
- display: inline-block;
- width: 100%;
- font-size: 0;
+.two-columns {
+  display: flex;
 }
 
-.two-bloсks .first-item {
-  width: 153px;
-  height: 116px;
-  background-color: rgb(23, 131, 8);
-  margin: 34px 68px 34px 34px; 
-  display: inline-block;
-  font-size: 1rem;
+.two-columns_item {
+  width: 50%;
+  padding: 34px;
+  box-sizing: border-box;
 }
 
-.two-bloсks .second-item {
-  width: 153px;
-  height: 116px;
-  background-color: rgb(23, 131, 8);
-  margin: 34px 34px 34px 0px;
-  display: inline-block;
-  font-size: 1rem;
+.bc-green {
+  height: 153px;
+  background-color: green;
 }
 
-.three-blocks {
-  width: 100%;
+.three-columns {
   font-size: 0;
-  margin: 0;
 }
 
-.three-blocks .red-block {
-  width: 147px ;
-  height: 147px ;
-  background-color: red ;
-  display: inline-block ;
+.three-columns_item {
+  display: inline-block;
   font-size: 1rem;
+  width: 33.333%;
 }
 
-.three-blocks .blue-block {
-  width: 147px;
-  height: 147px;
+.three-columns_content {
+  height: 150px;
+}
+
+.bc-red {
+  background-color: red;
+}
+
+.bc-blue {
   background-color: blue;
-  display: inline-block;
-  font-size: 1rem;
 }
 
-.three-blocks .yellow-block {
-  width: 147px;
-  height: 147px;
+.bc-yellow {
   background-color: yellow;
-  display: inline-block;
-  font-size: 1rem;
 }
 
-.footer {
-  width: 442px;
-  height: 55px;
-  background-color: grey;
-  margin: 34px 0 0 0;
+footer {
+  height: 50px;
+  background-color: lightgray;
+  margin-top: 34px;
 }
-
