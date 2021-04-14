@@ -1,3 +1,5 @@
+@import "./sprites.scss";
+
 body * {
   outline: 1px solid lightgrey;
 }
@@ -60,4 +62,13 @@ footer {
   height: 50px;
   background-color: lightgray;
   margin-top: 34px;
+}
+
+.background-image {
+  background-image: url('/img/bird.jpg');
+  height: 100%;
+  color: blue;
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
 }

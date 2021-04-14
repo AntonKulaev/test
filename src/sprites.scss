@@ -1,14 +1,18 @@
 .download {
     width: 640px; height: 640px;
-    background: url('/img/sprites.png') -10px -10px;
+    background: url('/img/download.jpg') -10px -10px;
 }
 
 .download_flat {
     width: 256px; height: 256px;
-    background: url('/img/sprites.png') -10px -670px;
+    background: url('/img/download-flat.png') -10px -670px;
+    //background-position: 50% 50% ;
+    //background-size: contain;
 }
 
 .search {
     width: 512px; height: 512px;
-    background: url('/img/sprites.png') -670px -10px;
+    background: url('/img/search.webp') -670px -10px;
+   // background-position: 50% 50% ;
+    //background-size: contain;
 }
