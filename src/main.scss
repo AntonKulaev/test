@@ -103,3 +103,31 @@ left: calc(100% - 20px);
 .tooltip:hover:after {
   content: attr(data-tip);
 }
+
+.relative, .absolute, .fixed {
+  color: white;
+}
+
+.fixed {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sticky {
+  background-color: tomato;
+  position: sticky;
+  bottom: 100px;
+  top: 100px;
+  width: 150px;
+  height: 150px;
+  z-index: 2;
+}
+
+.sticky-header {
+  position: sticky;
+  top: 0;
+  background-color: lightgray;
+  z-index: 1;
+}

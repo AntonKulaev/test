@@ -9,11 +9,14 @@
 </head>
 <body>
   <section>
-    <header>
-      <h2>Position relative</h2> 
+    <header class="sticky-header">
+      <h2>Position relative(sticky)</h2> 
     </header>
+    <div class="sticky">
+      sticky
+    </div>
     <div class="block red"></div>
-    <div class="block green relative"></div>
+    <div class="block green relative">Relative</div>
     <div class="block blue"></div>
     <div class="section">
       <span class="required">Required field</span>
@@ -28,7 +31,18 @@
       <h2>Position absolute</h2> 
     </header>
     <div class="block red"></div>
-    <div class="block blue absolute"></div>
+    <div class="block blue absolute">absolute</div>
+    <div class="block green"></div>
+    <p class="tooltip" data-tip="You need to read War and Peace">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, in natus iure error maxime temporibus aliquid, eligendi quasi iusto recusandae neque. Sit soluta odio, ab totam minus voluptates vitae quidem?
+    </p>
+  </section>
+  <section class="absolute-wrapper">
+    <header>
+      <h2>Position fixed</h2> 
+    </header>
+    <div class="block red"></div>
+    <div class="block blue fixed">Fixed</div>
     <div class="block green"></div>
     <p class="tooltip" data-tip="You need to read War and Peace">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, in natus iure error maxime temporibus aliquid, eligendi quasi iusto recusandae neque. Sit soluta odio, ab totam minus voluptates vitae quidem?
