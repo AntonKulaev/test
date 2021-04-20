@@ -1,3 +1,39 @@
 body * {
   outline: 1px solid lightgrey;
 }
+
+.menu {
+  &__item {
+    width: 80px;
+    height: 80px;
+    position: relative;
+
+    &:hover {
+      background-color: tomato;
+    }
+  }
+
+  &__content {
+    display: none;
+    //width: 120px;
+    //height: 300px;
+    //background-color: lightgray;
+    top: 100%;
+    left: calc(100% - 30px);
+    position: absolute;
+  }
+}
+
+.menu__item:hover > .menu__content {
+  display: block;
+}
+
+.sub-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sub-menu__item {
+  padding: 7px 15px;
+}
