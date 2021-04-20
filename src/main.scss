@@ -1,5 +1,5 @@
 body * {
-  outline: 1px solid lightgrey;
+  //outline: 1px solid lightgrey;
 }
 
 .section {
@@ -130,4 +130,38 @@ left: calc(100% - 20px);
   top: 0;
   background-color: lightgray;
   z-index: 1;
+}
+
+.modal-wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: #d4d2d2db;
+  display: flex;
+}
+
+.modal-content {
+  width: 400px;
+  height: 200px;
+  border: 1px solid lightgray;
+  border-radius: 15px;
+  position: relative;
+  background-color: white;
+  margin: auto;
+  padding: 15px;
+}
+
+.modal-closer {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid lightgray;
+  top: -20px;
+  right: -25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  z-index: 1;
+  cursor: pointer;
 }
