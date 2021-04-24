@@ -15,8 +15,12 @@
         overflow: hidden;
         border: 2px solid #fcb544;
         padding: calc(50% - 2px);
-        font-size: 0;
-        background-position: 50%;
+        background-position: 35%;
         background-size: cover;   
+    }
+
+    &_content {
+        font-size: 12px;
+        text-align:justify;
     }
 }
