@@ -4,23 +4,22 @@ body * {
 
 .menu {
   &__item {
-    width: 80px;
-    height: 80px;
+    display: inline-block;
     position: relative;
 
     &:hover {
-      background-color: tomato;
+      top: 2px;
+      left: 2px;
     }
   }
 
   &__content {
     display: none;
-    //width: 120px;
-    //height: 300px;
-    //background-color: lightgray;
     top: 100%;
-    left: calc(100% - 30px);
+    //left: calc(100% - 30px);
+    left: 0;
     position: absolute;
+    padding-left: 100%;
   }
 }
 
@@ -36,4 +35,17 @@ body * {
 
 .sub-menu__item {
   padding: 7px 15px;
+}
+
+.menu__image {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.menu__description {
+  color: green;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
 }
