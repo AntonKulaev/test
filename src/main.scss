@@ -1,3 +1,19 @@
+@font-face {
+  font-family: 'Google-font-sufer';
+  src: url('/fonts/OriginalSurfer-Regular.ttf');
+}
+
 body * {
   outline: 1px solid lightgrey;
+}
+
+.custom-font {
+  font-family: 'Google-font-sufer', sans-serif;
+  font-size: 1rem;
+  font-style: italic;
+  line-height: 2.5rem;
+  letter-spacing: 10px;
+  text-decoration: underline;
+  color: green;
+  text-shadow: 1px 1px blue;
 }
