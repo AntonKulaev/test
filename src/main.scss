@@ -1,3 +1,24 @@
 body * {
   outline: 1px solid lightgrey;
 }
+
+.picture {
+  width: 200px;
+  height: 150px;
+  //position: relative;
+}
+
+.with-camera {
+  position: relative;
+}
+
+.with-camera:before {
+  content: '';
+  width: 70px;
+  height: 40px;
+  background-color: red;
+  display: block;
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+}
