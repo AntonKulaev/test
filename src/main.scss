@@ -3,22 +3,36 @@ body * {
 }
 
 .picture {
-  width: 200px;
-  height: 150px;
-  //position: relative;
+  // width: 200px;
+  // height: 150px;
+  // //position: relative;
 }
 
-.with-camera {
+.with-red-camera {
   position: relative;
+  &:hover:before {
+    content: '';
+    width: 20px;
+    height: 15px;
+    display: block;
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    background-image: url('/img/photo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    z-index: 1;
 }
 
-.with-camera:before {
-  content: '';
-  width: 70px;
-  height: 40px;
-  background-color: red;
-  display: block;
-  position: absolute;
-  bottom: 8px;
-  left: 8px;
+  &:hover:after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    left: 13px;
+    background-color: white;
+  }
 }
