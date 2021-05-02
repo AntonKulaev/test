@@ -2,14 +2,14 @@
     display: inline-block;
     padding: 0 15px;
     text-decoration: none;
+    
+    &:hover {
+        position: relative;
+        top: 2px;
+        left: 2px;
+    }
 
     &__description {
         text-align: center;
-        
-    }
-
-    &:hover {
-        top: 2px;
-
     }
 }
