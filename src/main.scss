@@ -42,16 +42,69 @@ body * {
   }
 }
 
-.section-header {
+//Первый способ линий
+
+// .section-header {
+//   position: relative;
+//   text-align: center;
+//   & span {
+//     position: relative;
+//     background-color: white;
+//     z-index: 3;
+//   }
+// }
+
+// .line {
+//   position: absolute;
+//   border-bottom: 3px solid black;
+//   bottom: 5px;
+//   z-index: 2;
+//   width: 100%;
+// }
+
+//Второй способ линий
+.section-header h3 {
+  margin: 0;
+  background-color: white;
   position: relative;
-  // background-color: white;
-  // z-index: 5;
+  z-index: 4;
+
+  &::after {
+    content: '';
+    display: inline-block;
+    width: 15px;
+  }
 }
 
-.line {
+.section-header--blue h3 {
+  color: blue;
+}
+
+.section-header {
+  position: relative;
+  display: flex;
+  padding-top: 10px;
+}
+
+.section-header--center {
+  justify-content: center;
+
+  & h3:before {
+   content: '';
+   display: inline-block;
+   width: 15px;
+  }
+}
+
+.section-header:after {
+  content: '';
   position: absolute;
   border-bottom: 3px solid black;
   bottom: 5px;
   z-index: 2;
   width: 100%;
+}
+
+.section-header--blue:after {
+  border-color: red;
 }
