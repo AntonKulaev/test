@@ -1,0 +1,29 @@
+.sprite {
+    width: 64px;
+    height: 64px;
+    background-image: url('./img/css_sprites.png');
+    display: inline-block;
+}
+
+.home {
+    background-position: -94px -10px;
+}
+
+.about {
+    background-position: -10px -10px;
+}
+
+.work {
+    background-position: -178px -10px;
+}
+
+.blog {
+    background-position: -94px -94px;
+}
+
+.contact {
+    background-position: -10px -94px;
+}
+
+
+
