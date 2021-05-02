@@ -1,8 +1,15 @@
-.meni-item {
+.menu-item {
     display: inline-block;
     padding: 0 15px;
+    text-decoration: none;
 
     &__description {
         text-align: center;
+        
+    }
+
+    &:hover {
+        top: 2px;
+
     }
 }
