@@ -28,7 +28,13 @@ body * {
 
   &_img {
     padding-right: 30px;
+    position: relative;
+
+    & .rabbit-eye {
+      position: absolute;
+    }
   }
+
 }
 
 .text-logo {
