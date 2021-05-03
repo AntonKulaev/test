@@ -16,7 +16,25 @@ body * {
   max-width: 1200px;
   margin: 0 auto;
   padding: 50px 0;
+
+  &.logo {
+    display: flex;
+  }
 }
+
+.rabbit-logo {
+  display: flex;
+}
+
+.text-logo {
+  padding: 37px 0;
+  
+  & .orange {
+    margin-bottom: 3px;
+    color: orange;
+  }
+}
+
 
 footer {
   background-color: #fb9c06;

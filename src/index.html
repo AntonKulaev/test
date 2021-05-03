@@ -8,7 +8,26 @@
   <link rel="stylesheet" href="./main.scss">
 </head>
 <body>
-  <header class="container">
+  <header class="container logo">
+    <div class="rabbit-logo">
+      <img src="./img/Rabbit-logo.jpg" alt="">
+      <div class="text-logo">
+        <div class="orange">
+          Orange
+        </div>
+        <div class="Rabbit">
+          Rabbit
+        </div>
+      </div>
+    </div>
+    @@include('./partials/menu-item/_menu-item.html',
+    {
+     "item": "home"
+    })
+    @@include('./partials/menu-item/_menu-item.html',
+     {
+      "item": "about"
+     })
      @@include('./partials/menu-item/_menu-item.html',
      {
       "item": "work"
@@ -16,14 +35,6 @@
      @@include('./partials/menu-item/_menu-item.html',
      {
       "item": "blog"
-     })
-     @@include('./partials/menu-item/_menu-item.html',
-     {
-      "item": "about"
-     })
-     @@include('./partials/menu-item/_menu-item.html',
-     {
-      "item": "home"
      })
      @@include('./partials/menu-item/_menu-item.html',
      {
