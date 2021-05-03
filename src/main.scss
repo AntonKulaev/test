@@ -30,8 +30,27 @@ body * {
     padding-right: 30px;
     position: relative;
 
-    & .rabbit-eye {
+    &:before {
+      content: '';
+      width: 10px;
+      height: 8px;
+      display: block;
       position: absolute;
+      top: 29px;
+      right: 47px;
+      background-image: url('./img/Rabbit eye3.png');
+      z-index: 1;
+    }
+
+    &:after {
+      content: '';
+      width: 15px;
+      height: 12px;
+      display: block;
+      position: absolute;
+      top: 38px;
+      right: 39px;
+      background-image: url('./img/Rabbit-mouth.png');
     }
   }
 
