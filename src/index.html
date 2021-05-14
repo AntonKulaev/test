@@ -10,7 +10,7 @@
 </head>
 <body>
   <div class="picture with-red-camera">
-    <img src="/img/cup.png">
+    <img  src="/img/cup.png">
   </div>
   <!-- Первый способ <h3 class="section-header">
     <span>Last news</span> 
@@ -27,9 +27,46 @@
       Last news 
     </h3>
   </header>
+  <div class="picture with2-red2-camera2">
+    <img src="/img/cup.png">
+  </div>
   <i class="fab fa-angellist fa-9x"></i>
   <i class="fab fa-angellist"></i>
-  
+  <i class="fas fa-camera"></i>
+  <div class="fa-pseudo"></div>
+  @@include('./partials/news/_news.html',{
+    "newsPicturePath": "./img/cup.png",
+    "text": "Test text",
+    "direction": "",
+    "modificator": ""
+  })
+  @@include('./partials/news/_news.html',{
+    "newsPicturePath": "./img/cup.png",
+    "text": "Test text",
+    "direction": "",
+    "modificator": "--big-image",
+    "withCamera": "with-red-camera"
+  })
+  <div class="two-columns">
+    <div class="two-columns__item">
+      @@include('./partials/news/_news.html',{
+        "newsPicturePath": "./img/cup.png",
+        "text": "Test text",
+        "direction": "",
+        "modificator": "",
+        "withCamera": "with-red-camera"
+      })
+    </div>
+    <div class="two-columns__item">
+      @@include('./partials/news/_news.html',{
+        "newsPicturePath": "./img/cup.png",
+        "text": "Test text",
+        "direction": "--column",
+        "modificator": "--big-image",
+        "withCamera": "with-red-camera"
+      })
+    </div>
+  </div>
 </body>
 </html>
 
