@@ -28,7 +28,26 @@
     </p>
   </div>
   <div class="short-news">
-    <h3>Child</h3>
+    <h3 id="title" class="title" data-class="title">
+      Test Text
+    </h3>
+    <style>
+      #title {
+        color: red;
+      }
+
+      .title:hover {
+        color: green;
+      }
+
+      [id="title"] {
+        color: blue;
+      }
+
+      [data-class="title"] {
+        color: black;
+      }
+    </style>
     <h2>Short news</h2>
     <h3>Child</h3>
     <div class="blog-article">
