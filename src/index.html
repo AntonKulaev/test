@@ -8,6 +8,20 @@
   <link rel="stylesheet" href="./main.scss">
 </head>
 <body>
+  <div class="feedback">
+    <label class="feedback__label">
+      Name:
+    </label>
+    <input name="name">
+    <label class="feedback__label">
+      Email:
+    </label>
+    <input name="name">
+    <label class="feedback__label">
+      Message:
+    </label>
+    <input name="name">
+  </div>
   <div class="circle circle--big center bg-tomato"></div>  
   <div class="circle center bg-green"></div>  
   <div class="square bg-tomato--light"></div>
@@ -28,24 +42,33 @@
     </p>
   </div>
   <div class="short-news">
-    <h3 id="title" class="title" data-class="title">
+    <h3 
+      id="title"
+      class="title"
+      data-class="title"
+    >
       Test Text
     </h3>
-    <style>
-      #title {
+    <!-- спецефичность селекторов: 1) id 2)класс 3)атрибут 4)псевдокласс -->
+    <style >
+      /* это id */
+      /* #title {
         color: red;
-      }
+      } */
 
+      /* это класс */
       .title:hover {
         color: green;
       }
 
+      /* это атрибут */
       [id="title"] {
         color: blue;
       }
 
+      /* атрибут */
       [data-class="title"] {
-        color: black;
+        color: tomato;
       }
     </style>
     <h2>Short news</h2>
