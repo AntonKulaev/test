@@ -75,9 +75,25 @@ body * {
   }
 }
 
-// .menu-item__right {
-//   padding-right: 20px;
-// }
+.banner {
+  background-size: cover;
+  overflow: hidden;
+  background-image: url('/img/big-orange-bg.jpg');
+  height: 400px;
+  border: 3px solid orange;
+}
+
+.container-big-orange {
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.text-banner {
+  position: absolute;
+  height: 100%;
+}
 
 
 footer {
