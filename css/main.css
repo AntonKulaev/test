@@ -54,7 +54,7 @@
 .sprite {
   width: 64px;
   height: 64px;
-  background-image: url("../img/css_sprites.png");
+  background-image: url("../../img/css_sprites.png");
   margin: 0; }
 
 .home {
@@ -74,9 +74,6 @@
 
 .body {
   margin: 0; }
-
-body * {
-  outline: 1px solid lightgrey; }
 
 .container {
   max-width: 1200px;
@@ -104,7 +101,7 @@ body * {
       position: absolute;
       top: 29px;
       right: 47px;
-      background-image: url("../img/Rabbit eye3.png");
+      background-image: url("../../img/Rabbit eye3.png");
       z-index: 1; }
     .rabbit-logo_img:after {
       content: '';
@@ -114,7 +111,7 @@ body * {
       position: absolute;
       top: 38px;
       right: 39px;
-      background-image: url("../img/Rabbit-mouth.png"); }
+      background-image: url("../../img/Rabbit-mouth.png"); }
 
 .text-logo {
   padding: 20px 0;
@@ -131,7 +128,7 @@ body * {
 .banner {
   background-size: cover;
   overflow: hidden;
-  background-image: url("../img/big-orange-bg.jpg");
+  background-image: url("../../img/big-orange-bg.jpg");
   height: 400px;
   border: 3px solid orange; }
 
