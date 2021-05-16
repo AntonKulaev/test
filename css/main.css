@@ -1,0 +1,232 @@
+.article p {
+  font-size: 14px;
+  font-family: sans-serif;
+  text-align: left;
+  padding: 5px;
+  font-weight: 600; }
+
+.article .read-more {
+  color: #fb9c06;
+  text-decoration: none;
+  font-style: italic;
+  text-align: right;
+  display: block; }
+
+.article img {
+  float: left;
+  margin: 5px; }
+
+.team-card_header {
+  color: #6e6d6b;
+  font-size: 22px;
+  margin-bottom: 20px;
+  text-align: center; }
+
+.team-card_position {
+  color: #fcb544; }
+
+.team-card_img {
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid #fcb544;
+  padding: calc(50% - 5px);
+  background-position: 35%;
+  background-size: cover; }
+
+.team-card_content {
+  font-size: 16px;
+  text-align: left;
+  padding: 0 25px; }
+
+.menu-item {
+  display: inline-block;
+  padding: 0 25px;
+  text-decoration: none; }
+  .menu-item:hover {
+    position: relative;
+    top: 2px;
+    left: 2px; }
+  .menu-item__description {
+    text-align: center;
+    color: black;
+    font-size: 20px; }
+
+.sprite {
+  width: 64px;
+  height: 64px;
+  background-image: url("../../img/css_sprites.png");
+  margin: 0; }
+
+.home {
+  background-position: -94px -10px; }
+
+.about {
+  background-position: -10px -10px; }
+
+.work {
+  background-position: -178px -10px; }
+
+.blog {
+  background-position: -94px -94px; }
+
+.contact {
+  background-position: -10px -94px; }
+
+.body {
+  margin: 0; }
+
+body * {
+  outline: 1px solid lightgrey; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto; }
+  .container.logo {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0; }
+  .container.big-orange {
+    height: 100%;
+    display: flex;
+    align-items: center; }
+
+.rabbit-logo {
+  display: flex;
+  padding-left: 20px; }
+  .rabbit-logo_img {
+    padding-right: 30px;
+    position: relative; }
+    .rabbit-logo_img:before {
+      content: '';
+      width: 10px;
+      height: 8px;
+      display: block;
+      position: absolute;
+      top: 29px;
+      right: 47px;
+      background-image: url("../../img/Rabbit eye3.png");
+      z-index: 1; }
+    .rabbit-logo_img:after {
+      content: '';
+      width: 15px;
+      height: 12px;
+      display: block;
+      position: absolute;
+      top: 38px;
+      right: 39px;
+      background-image: url("../../img/Rabbit-mouth.png"); }
+
+.text-logo {
+  padding: 20px 0;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 30px; }
+  .text-logo .orange {
+    margin-bottom: 3px;
+    color: orange; }
+  .text-logo .rabbit {
+    text-transform: uppercase;
+    font-weight: bold; }
+
+.banner {
+  background-size: cover;
+  overflow: hidden;
+  background-image: url("../../img/big-orange-bg.jpg");
+  height: 400px;
+  border: 3px solid orange; }
+
+.text-banner {
+  padding-left: 15px;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: sans-serif; }
+  .text-banner .text-rabbits {
+    color: #fb9c06;
+    background-color: black;
+    opacity: 0.7;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 15px; }
+  .text-banner .text-oranges {
+    color: rgba(0, 0, 0, 0.5);
+    background-color: orange;
+    opacity: 0.7;
+    padding: 10px; }
+
+.four-columns {
+  display: flex; }
+
+.four-columns_item {
+  width: 25%; }
+
+.three-columns {
+  display: flex;
+  font-family: sans-serif; }
+
+.three-columns_items {
+  width: 33.333%;
+  padding: 0 50px;
+  box-sizing: border-box; }
+
+.header {
+  color: #fb9c06;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 15px;
+  font-size: 40px;
+  text-decoration: underline;
+  font-weight: 100; }
+
+.header.dots:after {
+  content: "...";
+  display: inline-block;
+  text-decoration: underline; }
+
+.feedback {
+  display: grid;
+  grid-template-columns: minmax(100px, max-content) 1fr;
+  row-gap: 15px;
+  column-gap: 25px; }
+  .feedback__label {
+    color: #fb9c06;
+    font-size: 25px; }
+  .feedback .field {
+    background-color: lightgray;
+    opacity: 0.2;
+    border-top: 3px solid black;
+    border-left: 5px solid black; }
+    .feedback .field--message {
+      height: 120px; }
+
+.button {
+  position: relative;
+  text-align: right;
+  padding-right: 15px;
+  margin-top: 20px; }
+  .button .button-submit {
+    position: relative;
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    color: white;
+    background-color: #fb9c06;
+    border: 0px;
+    border-bottom: 2px solid grey;
+    font-weight: 100;
+    font-size: 20px; }
+    .button .button-submit:hover {
+      top: 2px;
+      left: 2px; }
+
+footer {
+  margin-top: 40px;
+  background-color: #fb9c06;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  border: 0px;
+  border-bottom: 2px solid grey; }
+
+/*# sourceMappingURL=maps/main.css.map */
