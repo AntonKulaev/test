@@ -175,6 +175,26 @@ body * {
   }
 }
 
+.button {
+  position: relative;
+  display: inline-block;
+  text-align: right;
+
+  &:hover {
+    top: 2px;
+    left: 2px;
+  }
+
+  & .button-submit {
+    width: 90px;
+    height: 30px;
+    color: white;
+    background-color:#fb9c06;
+    border: 0px;
+    font-weight: 100;
+  }
+}
+
 footer {
   background-color: #fb9c06;
 }
