@@ -116,14 +116,6 @@ body * {
   }
 }
 
-
-
-
-
-footer {
-  background-color: #fb9c06;
-}
-
 .four-columns {
   display: flex;
 }
@@ -134,6 +126,7 @@ footer {
 
 .three-columns {
   display: flex;
+  font-family: sans-serif;
 }
 
 .three-columns_items {
@@ -150,6 +143,7 @@ footer {
   padding-bottom: 15px;
   font-size: 40px;
   text-decoration: underline;
+  font-weight: 100;
 }
 
 .header.dots:after {
@@ -158,3 +152,6 @@ footer {
   text-decoration: underline;
 }
 
+footer {
+  background-color: #fb9c06;
+}
