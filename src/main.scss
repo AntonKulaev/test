@@ -8,9 +8,9 @@
   margin: 0;
 }
 
-// body * {
-//   outline: 1px solid lightgrey;
-// }
+body * {
+  outline: 0px solid lightgrey;
+}
 
 .container {
   max-width: 1200px;
@@ -85,7 +85,8 @@
   overflow: hidden;
   background-image: url('/img/big-orange-bg.jpg');
   height: 400px;
-  border: 3px solid orange;
+  border-top: 3px solid orange;
+  border-bottom: 3px solid orange;
 }
 
 .text-banner {
