@@ -19,12 +19,14 @@ body * {
 
   &.logo {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 
 .rabbit-logo {
   display: flex;
-  padding:0 180px 0 120px;
+  padding-left:20px;
 
   &_img {
     padding-right: 30px;
@@ -72,6 +74,10 @@ body * {
     font-weight: bold;
   }
 }
+
+// .menu-item__right {
+//   padding-right: 20px;
+// }
 
 
 footer {
