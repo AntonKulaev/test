@@ -152,6 +152,29 @@ body * {
   text-decoration: underline;
 }
 
+.feedback {
+  display: grid;
+  grid-template-columns: minmax(100px, max-content) 1fr;
+  row-gap: 15px;
+  column-gap: 25px;
+
+  &__label {
+    color: #fb9c06;
+    font-size: 25px;
+  }
+
+  & .field {
+    background-color: lightgray;
+    opacity: 0.2;
+    border-top: 3px solid black;
+    border-left: 5px solid black;
+
+    &--message {
+      height: 120px;
+    }
+  }
+}
+
 footer {
   background-color: #fb9c06;
 }
