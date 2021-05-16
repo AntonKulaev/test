@@ -1,7 +1,7 @@
 .menu-item {
     // width: 20%;
     display: inline-block;
-    padding: 0 15px 0 45px;
+    padding: 0 25px;
     text-decoration: none;
     
     &:hover {
@@ -12,5 +12,8 @@
 
     &__description {
         text-align: center;
+        color: black;
+        font-size: 20px;
     }
 }
+

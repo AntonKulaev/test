@@ -15,12 +15,17 @@ body * {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px 0;
 
   &.logo {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    padding: 20px 0;
+  }
+
+  &.big-orange {
+    height: 100%;
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -83,16 +88,7 @@ body * {
   border: 3px solid orange;
 }
 
-.container-big-orange {
-  height: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  position: relative;
-}
-
 .text-banner {
-  position: absolute;
-  top: 33%;
   padding-left: 15px;
   text-transform: uppercase;
   font-size: 40px;
@@ -177,24 +173,39 @@ body * {
 
 .button {
   position: relative;
-  display: inline-block;
   text-align: right;
+  padding-right: 15px;
+  margin-top: 20px;
 
-  &:hover {
-    top: 2px;
-    left: 2px;
-  }
+  
 
   & .button-submit {
-    width: 90px;
-    height: 30px;
+    position: relative;
+    display: inline-block;
+    width: 120px;
+    height: 40px;
     color: white;
     background-color:#fb9c06;
     border: 0px;
+    border-bottom: 2px solid grey;
     font-weight: 100;
+    font-size: 20px;
+
+    &:hover {
+      top: 2px;
+      left: 2px;
+    }
   }
 }
 
 footer {
+  margin-top: 40px;
   background-color: #fb9c06;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  border: 0px;
+  border-bottom: 2px solid grey;
 }
+
