@@ -1,3 +1,26 @@
 body * {
   outline: 1px solid lightgrey;
 }
+
+.news-pages {
+  width: 940px;
+  height: 1400px;
+}
+
+.news {
+  display: flex;
+}
+
+.aside {
+  display: flex;
+  align-items: center;
+  width: 300px;
+
+  &.video {
+    height: 50%;
+  }
+
+  &.interesting-articles {
+    height: 50%;
+  }
+}
