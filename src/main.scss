@@ -1,3 +1,22 @@
+@import "./resetter.scss";
+
 body * {
   outline: 1px solid lightgrey;
 }
+
+.form {
+  display: flex;
+  flex-direction: column;
+
+  &__input {
+    font-size: 16px;
+    padding: 5px 8px;
+  }
+
+  
+  &__submit {
+    background-color: white;
+  }
+  
+}
+

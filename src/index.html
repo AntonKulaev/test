@@ -8,6 +8,90 @@
   <link rel="stylesheet" href="./main.scss">
 </head>
 <body>
+  <form action="/test" method="get" class="form">
+    <label class="form__input">
+      <span>First name</span>
+      <input 
+      type="text"
+      name="first-name"
+      value="Anton"
+      maxlength="15"
+    >
+    </label>
+    <label class="form__input">
+      <span>Phone number</span>
+      <input type="text"
+        name="phone-number"
+        pattern="[d{3}-d{3}-d{2}]">
+    </label>
+    <input
+      type="number"
+      name="first-name"
+      value="10"
+      min="0"
+      max="11"
+    >
+    <input
+      type="email"
+      name="first-name"
+      placeholder="email"
+      required
+    >
+    <input
+      type="text"
+      value="Last name"
+      placeholder="Last name"
+    >
+    <label class="form__input">
+      <span>Yes</span>
+      <input
+      type="radio"
+      name="radio"
+      value="yes"
+    >
+    </label>
+    
+    <label class="form__input">
+      <span>No</span>
+      <input
+      type="radio"
+      name="radio"
+      value="no"
+    >
+    </label>
+    <label class="form__input">
+      <span>Not sure</span>
+      <input
+      type="radio"
+      name="radio"
+      value="not sure"
+    >
+    </label>
+    <label for="checkbox-yes">
+      Checkbox Yes
+    </label>
+    <input
+      id="checkbox-yes"
+      type="checkbox"
+      name="checkbox"
+      value="yes"
+    >
+    <input
+      type="checkbox"
+      name="checkbox1"
+      value="no"
+    >
+    <input
+      type="checkbox"
+      name="checkbox2"
+      value="not sure"
+    >
+    <textarea name="text-area" id="" cols="30" rows="10"></textarea>
+    <input type="submit" name="Submit">
+    <button class="form__submit">
+      Btn submit
+    </button>
+  </form>
 </body>
 </html>
 
