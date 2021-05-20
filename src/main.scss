@@ -2,9 +2,8 @@ body * {
   outline: 1px solid lightgrey;
 }
 
-.news-pages {
-  width: 940px;
-  height: 1400px;
+.news-page {
+  max-width: 940px;
 }
 
 .news {
@@ -12,15 +11,65 @@ body * {
 }
 
 .aside {
+  min-width: 300px;
+}
+
+.header {
   display: flex;
-  align-items: center;
-  width: 300px;
+  font-family: sans-serif;
+  font-size: 14px;
 
-  &.video {
-    height: 50%;
+  &__hot-themes {
+    padding: 3px 8px;
+    background-color: black;
+    color: white;
   }
 
-  &.interesting-articles {
-    height: 50%;
+  &__euro-2016 {
+    padding: 3px 12px 3px 8px;
+    background-color: rgb(226, 221, 221);
+    color: rgb(104, 103, 103);
   }
+
+  &__el-classico {
+    padding: 3px 8px;
+    background-color: rgb(226, 221, 221);
+    color: rgb(104, 103, 103);
+  }
+}
+
+.slider {
+  display:flex;
+  margin-top: 20px;
+  border-bottom: 6px solid red;
+}
+
+.photo-jurgen {
+  font-size: 0px;
+}
+
+.text-about-jurgen__big {
+  font-size: 32px;
+  color: red;
+  padding: 10px 25px 15px 15px;
+}
+
+.text-about-jurgen__small {
+  font-family: sans-serif;
+  padding: 10px 55px 15px 15px;
+  font-size: 14px;
+}
+
+.diagram {
+  display: flex;
+  justify-content: flex-end;
+  padding: 30px 10px 10px 10px;
+
+}
+
+.slider-mechanism {
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color:rgb(75, 71, 71);
 }
