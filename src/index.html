@@ -20,8 +20,9 @@
     </label>
     <label class="form__input">
       <span>Phone number</span>
-      <input type="text"
+      <input type="text" class="form__text-input"
         name="phone-number"
+        placeholder="phone number"
         pattern="[d{3}-d{3}-d{2}]">
     </label>
     <input
@@ -91,6 +92,33 @@
     <button class="form__submit">
       Btn submit
     </button>
+    <div class="input">
+      <input type="radio"
+      class="input__input"
+      name="test"
+      value="yes"
+      id="radio-yes"
+      checked 
+      >
+      <label
+        class="input__label"
+        for="radio-yes"
+        >
+        Yes
+      </label>
+      <input type="radio"
+      class="input__input"
+      name="test"
+      value="no"
+      id="radio-no"
+      >
+      <label
+        class="input__label"
+        for="radio-no"
+        >
+        No
+      </label>
+    </div>
   </form>
 </body>
 </html>

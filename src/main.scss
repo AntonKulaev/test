@@ -17,6 +17,37 @@ body * {
   &__submit {
     background-color: white;
   }
+
+  &__text-input {
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 5px 7px;
+
+    &:focus,
+    &:active {
+      border-color:blue;
+    }
+
+    &.error {
+      border-color: red;
+    }
+  }
   
+}
+
+.input {
+  &__input {
+    display: none;
+  }
+
+  &__label {
+    font-size: 20px;
+    display: inline-block;
+    padding: 20px;
+  }
+}
+
+.input__input:checked + .input__label{
+  background-color: lightgray;
 }
 
