@@ -4,6 +4,10 @@ body * {
   outline: 1px solid lightgrey;
 }
 
+body {
+  margin-bottom: 50px;
+}
+
 .form {
   display: flex;
   flex-direction: column;
@@ -41,13 +45,87 @@ body * {
   }
 
   &__label {
-    font-size: 20px;
     display: inline-block;
-    padding: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: max-content;
+
+    &:before,
+    &:after {
+      box-sizing: border-box;
+      border: 3px solid tomato;
+      border-radius: 50%;
+    }
+
+    &:before {
+      content: '';
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+  
+    }
+    
+    &:after {
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      background-color: tomato;
+      top: 9.5px;
+      left: 5px;
+    }
   }
 }
 
-.input__input:checked + .input__label{
-  background-color: lightgray;
+.input__input:checked + .input__label:after {
+  content: '';
 }
+
+.responsive {
+  display: flex;
+
+  &__aside {
+    flex-basis: 100px;
+  }
+
+  &__main {
+    flex: 1 0 auto;
+  }
+}
+
+.accordion {
+  &__status--close,
+  &__status--open {
+    display: none;
+  }
+
+  &__action--close,
+  &__action--open {
+    display: block;
+  }
+
+  &__content {
+    font-size: 32px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height .5s linear;
+  }
+}
+
+.accordion__status--close:checked ~ .accordion__action--close {
+  display: none;
+}
+
+.accordion__status--open:checked ~ .accordion__action--open {
+  display: none;
+}
+
+// 80% высоты экрана
+.accordion__status--open:checked ~ .accordion__content {
+  max-height: 80vh; 
+  background-color: red;
+}
+
 
