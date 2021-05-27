@@ -5,3 +5,35 @@ body * {
 .column-wrapper {
   border: 1px solid red;
 }
+
+@keyframes move {
+
+  0% {
+    left: 0%;
+  }
+
+  50% {
+    left: 100%;
+    transform: rotate(360deg);
+  }
+
+  100% {
+    left: 0%;
+    transform: rotate(0deg);
+  }
+}
+
+.animation {
+  height: 300px;
+  position: relative;
+
+  &__item {
+    height: 70px;
+    width: 70px;
+    background-color: tomato;
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+    animation: move .5s linear .5s infinite;
+  }
+}
