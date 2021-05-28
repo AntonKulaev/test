@@ -1,5 +1,10 @@
-@import "./src/sprites.scss";
+@import './sprites.scss';
 
 body * {
   outline: 1px solid lightgrey;
+}
+
+.sprite {
+  width: 100px;
+  height: 100px;
 }
