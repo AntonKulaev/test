@@ -34,15 +34,29 @@ body * {
   }
 }
 
-.checkmark {
-  background-color: orange;
-  width: 15px;
-  height: 15px;
+.icon {
+  display: flex;
+  align-items: center;
+
+  &__checkmark {
+    width: 16px;
+    height: 16px;
+  }
 }
 
+.reviews {
+  font-weight: bold;
+  font-size: 15px;
+}
 
 .header-behavior-right {
   display: flex;
+  font-weight: bold;
+  align-items: center;
+
+  &__signin {
+    margin-left: 5 px;
+  }
 }
 
 // HEADER INFO

@@ -19,7 +19,7 @@
         <div class="header-behavior-left">
           <div class="trustpilot-icon">
             <div class="icon">
-              <img src="./img/checkmark.png" class="checkmark">
+              <img src="./img/check-yellow.png" class="icon__checkmark">
             </div>
             <div class="text-behavior-left">
               <div class="text-behavior-left__trust">
@@ -35,7 +35,7 @@
           </div>
         </div>
         <div class="header-behavior-right">
-          <div class="sign-up">
+          <div class="header-behavior-right__sign-up">
             sign-up
           </div>
           <div class="sign-in">
@@ -110,7 +110,9 @@
           </div>
         </div>
         <script>
-          new Splide( '.splide' ).mount();
+          new Splide( '.splide', {
+            arrows: false
+          } ).mount();
         </script>
         <div class="carousel-text">
           <div class="carousel-text__top">
