@@ -37,3 +37,15 @@ body * {
     animation: move .5s linear .5s infinite;
   }
 }
+
+.slide {
+  position: relative;
+
+  &__caption {
+    position: absolute;
+    color: white;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
