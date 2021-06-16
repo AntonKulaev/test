@@ -1,3 +1,5 @@
+@import "./partials/collection-card.scss";
+
 body * {
   outline: 1px solid lightgrey;
 }
@@ -103,3 +105,4 @@ body * {
     color: white;
   }
 }
+
