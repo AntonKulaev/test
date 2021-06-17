@@ -1,4 +1,30 @@
-.collection-card__img {
-    width: 192px;
-    height: 156px;
+.collection-card{
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid lightgrey;
+    
+    &__img {
+        width: 192px;
+        height: 156px;
+    }
+
+    & .card-content {
+
+        &__price {
+            padding: 5px 0;
+            color: red;
+        }
+    }
+
+    & .submit-btn {
+        display: flex;
+        justify-content: space-between;
+        font-size: 18px;
+
+        & .card-button {
+            background-color: white;
+            border: 1px solid lightgrey;
+            padding: 0 10px;
+        }
+    }    
 }

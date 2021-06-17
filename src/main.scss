@@ -1,4 +1,5 @@
 @import "./partials/collection-card/collection-card.scss";
+@import "./partials/choose-us/choose-us.scss";
 
 body * {
   outline: 1px solid lightgrey;
@@ -114,6 +115,18 @@ body * {
 }
 
 .four-columns__item {
-  width: 25%;
+  // padding: 15px;
+  flex-basis: 25%;
   
+}
+
+// WHY CHOOSE US
+
+.three-columns {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    flex-basis: 33.33%;
+  }
 }
