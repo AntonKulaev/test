@@ -106,3 +106,14 @@ body * {
   }
 }
 
+//  COLLECTION CARD
+
+.four-columns {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.four-columns__item {
+  width: 25%;
+  
+}
