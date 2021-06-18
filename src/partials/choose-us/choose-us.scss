@@ -1,0 +1,16 @@
+.choose-us-column {
+
+    &__header {
+        display: flex;
+
+        &--text {
+            padding-left: 10px;
+            text-transform: capitalize;
+            font-size: 18px;
+        }
+    }
+
+    &__content {
+        text-align: justify;
+    }
+}
