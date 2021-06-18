@@ -3,6 +3,11 @@
     &__header {
         display: flex;
 
+        &--img {
+            height: 50px;
+            width: 50px;
+        }
+
         &--text {
             padding-left: 10px;
             text-transform: capitalize;
