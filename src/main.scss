@@ -131,3 +131,70 @@ body * {
     padding: 0 10px;
   }
 }
+
+// FOTTER 
+
+.footer-menu {
+  display: flex;
+  background-color: black;
+
+  &__text {
+    text-transform: capitalize;
+    color: white;
+  }
+
+  &__signUp {
+
+    &--btn {
+      padding: 3px 15px;
+      color: white;
+      background-color:orange;
+    }
+  }
+
+  &__socialNetworks {
+    display: flex;
+    height: 30px;
+    width: 30px;
+
+    &--small{
+      z-index: 2;
+      color: white;
+    }
+  }
+}
+
+
+.footer-info {
+  display: flex;
+  padding: 50px 30px 20px 30px;
+  
+  & .item {
+    flex-basis: 25%;
+
+  }
+
+  &__content {
+
+    
+    &--img {
+      padding-bottom: 20px;
+
+      &--img1 {
+        padding-right: 5px;
+      }
+    }
+
+    &--text {
+      text-align: justify;
+    }
+  }
+
+  &__information {
+     
+    &--links {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
