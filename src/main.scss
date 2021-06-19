@@ -129,6 +129,37 @@ body * {
   &__item {
     flex-basis: 33.33%;
     padding: 0 10px;
+
+    & .quality-header {
+      display: flex;
+
+      &--img {
+        position: relative;
+        min-width: 55px;
+        min-height: 55px;
+        background-color: rgb(63, 60, 60);
+        border-radius: 50%;
+
+        & .pictures {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: white;
+        }
+
+      }
+
+      &--text {
+        display: flex;
+        align-items: center;
+        text-transform: capitalize;
+      }
+    }
+
+    & .quality-content {
+      text-align: justify;
+    }
   }
 }
 
@@ -207,11 +238,13 @@ body * {
   // padding: calc(50% - 5px);
   border-radius: 50%;
   border: 1px solid red;
+  background-color: black;
 
-  &-img {
-    width: 25px;
-    height: 25px;
+  & .fa-check {
+    position: absolute;
     top: 50%;
     left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
   }
 }

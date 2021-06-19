@@ -253,28 +253,43 @@
         <h3> Why Choose Us</h3>
         <div class="three-columns">
           <div class="three-columns__item">
-            @@include('./partials/choose-us/_choose-us.html',
-            {
-              "chooseImg": "./img/checkmark1.png" ,
-              "textHeader": "High Quality Products",
-              "contentText": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt nulla dolore ipsa amet dolorem exercitationem blanditiis repudiandae nihil id tempora, iusto doloremque culpa perferendis, provident magnam unde doloribus ipsam molestias."
-            })
+            <div class="quality-header">
+              <div class="quality-header--img">
+                <i class="fas fa-check fa-2x pictures"></i>
+              </div>
+              <h5 class="quality-header--text">
+                High quality product
+              </h5>
+            </div>
+            <div class="quality-content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus voluptatibus accusantium placeat. Provident sed, error quas rerum autem deleniti temporibus voluptatibus impedit ullam voluptatum quibusdam repudiandae quae nisi est pariatur!
+            </div>
           </div>
           <div class="three-columns__item">
-            @@include('./partials/choose-us/_choose-us.html',
-            {
-              "chooseImg": "fa-check",
-              "textHeader": "free shipping",
-              "contentText": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt nulla dolore ipsa amet dolorem exercitationem blanditiis repudiandae nihil id tempora, iusto doloremque culpa perferendis, provident magnam unde doloribus ipsam molestias."
-            })
+            <div class="quality-header">
+              <div class="quality-header--img">
+                <i class="fas fa-truck fa-2x  pictures"></i>
+              </div>
+              <h5 class="quality-header--text">
+                Free Shipping
+              </h5>
+            </div>
+            <div class="quality-content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus voluptatibus accusantium placeat. Provident sed, error quas rerum autem deleniti temporibus voluptatibus impedit ullam voluptatum quibusdam repudiandae quae nisi est pariatur!
+            </div>
           </div>
           <div class="three-columns__item">
-            @@include('./partials/choose-us/_choose-us.html',
-            {
-              "chooseImg": "./img/checkmark.png",
-              "textHeader": "sequre online shopping",
-              "contentText": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt nulla dolore ipsa amet dolorem exercitationem blanditiis repudiandae nihil id tempora, iusto doloremque culpa perferendis, provident magnam unde doloribus ipsam molestias."
-            })
+            <div class="quality-header">
+              <div class="quality-header--img">
+                <i class="fas fa-lock fa-2x pictures"></i>
+              </div>
+              <h5 class="quality-header--text">
+                Sequre Online shopping
+              </h5>
+            </div>
+            <div class="quality-content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus voluptatibus accusantium placeat. Provident sed, error quas rerum autem deleniti temporibus voluptatibus impedit ullam voluptatum quibusdam repudiandae quae nisi est pariatur!
+            </div>
           </div>
         </div>
       </section>
@@ -371,7 +386,7 @@
     </footer>
   </div>
   <div class="test">
-    <img src="./img/checkmark1.png"  class="test-img" alt="">
+    <i class="fas fa-check fa-2x"></i>
   </div>
 </body>
 </html>
