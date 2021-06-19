@@ -5,14 +5,18 @@ body * {
   outline: 1px solid lightgrey;
 }
 
-.e-shop {
-  max-width: 1200px;
-}
 // HEADER BEHAVIOR
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-bg {
+  background-color: rgb(247, 247, 247);
+}
 
 .header-behavior {
   display: flex;
-  background-color: rgb(247, 247, 247);
   justify-content: space-between;
 }
 
@@ -21,18 +25,18 @@ body * {
   display: flex;
 }
 
-.text-behavior-left {
+.text-behavior__left {
   display: flex;
   font-size: 16px;
   font-family: sans-serif;
   text-transform: uppercase;
   font-weight: 600;
 
-  &__trust {
+  &--trust {
    padding-left: 5px;
   }
 
-  &__pilot {
+  &--pilot {
     color: gray;
   }
 }
@@ -52,13 +56,17 @@ body * {
   font-size: 15px;
 }
 
-.header-behavior-right {
+.header-behavior__right {
   display: flex;
   font-weight: bold;
   align-items: center;
 
-  &__signin {
-    margin-left: 5 px;
+  &--signup {
+    padding-right: 30px;
+  }
+
+  &--signin {
+    // padding-right: 45px;
   }
 }
 
@@ -67,32 +75,81 @@ body * {
 .header-info {
   display: flex;
   justify-content: space-between;
+  padding: 25px 0 50px 0;
+
+  & .header-info__left {
+    display: flex;
+
+    & .logo {
+      min-width: 200px;
+      min-height: 100px;
+      padding-right: 50px;
+    }
+
+    &--text {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+
+      & .call-us {
+        font-size: 18px;
+        font-weight: 600;
+      }
+
+      & .telephone {
+        color: red;
+        font-size: 20px;
+      }
+
+      & .operating-mode {
+        font-size: 14px;
+        font-weight: 600;
+      }
+    }
+  }
+
 }
 
-.header-info-left {
-  display: flex;
+
+.header-info__right {
+
+  &--items {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    background-color: rgb(31, 28, 28);
+    color: white;
+    font-size: 18px;
+  }
+
+  & .header-info__pdr {
+    padding-right: 8px;
+  }
 }
 
-.cart-items {
-  display: flex;
-}
-
-
-.cart {
-  width: 20px;
-  height: 20px;
-}
 
 // HEADER MENU
 
-.header-menu {
-  background-color: black;
+.header-menuBg {
+  background-color: rgb(26, 25, 25);
 
-  &__text {
-    display: flex;
-    color: white;
+  & .header-menu {
+    padding: 30px 0;
+    font-size: 26px;
+    font-weight: 600;
+
+    &__text {
+      display: flex;
+      color: white;
+    }
+
+    & .header-menu__pdr {
+      padding-right: 50px;
+    }
   }
 }
+
+
 
 // CAROUSEL 
 

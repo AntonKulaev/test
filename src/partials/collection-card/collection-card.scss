@@ -21,6 +21,13 @@
             &--grey {
                 color: grey;
                 text-decoration: line-through;
+                
+                &:not(:empty):before {
+                    content: '\f154';
+                    font-family: "Font Awesome 5 Free";
+                    display: inline-block;
+                    font-weight: 900;
+                }
             }
         }
     }

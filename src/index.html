@@ -13,19 +13,19 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 </head>
 <body>
-  <div class="e-shop">
-    <header class="header">
-      <section class="header-behavior">
+  <header class="header">
+    <div class="header-bg">
+      <section class="header-behavior container">
         <div class="header-behavior-left">
           <div class="trustpilot-icon">
             <div class="icon">
               <img src="./img/check-yellow.png" class="icon__checkmark">
             </div>
-            <div class="text-behavior-left">
-              <div class="text-behavior-left__trust">
+            <div class="text-behavior__left">
+              <div class="text-behavior__left--trust">
                 trust
               </div>
-              <div class="text-behavior-left__pilot">
+              <div class="text-behavior__left--pilot">
                 pilot
               </div>
             </div>
@@ -34,211 +34,140 @@
             2.997 reviews 
           </div>
         </div>
-        <div class="header-behavior-right">
-          <div class="header-behavior-right__sign-up">
+        <div class="header-behavior__right">
+          <div class="header-behavior__right--signup">
             sign-up
           </div>
-          <div class="sign-in">
+          <div class="header-behavior__right--signin">
             sign-in
           </div>
         </div>
       </section>
-      <section class="header-info">
-        <div class="header-info-left">
-          <img src="./img/logo.png" class="logo">
-          <div class="header-info-text__left">
-            <div class="call-us">
-              Call us
-            </div>
-            <div class="telephone">
-              Tel. 0800 066 5972
-            </div>
-            <div class="operating-mode">
-              (Monday- Fraday 9.30 am-4.30pm)
-            </div>
+    </div>
+    <section class="header-info container">
+      <div class="header-info__left">
+        <img src="./img/logo.png" class="logo">
+        <div class="header-info__left--text">
+          <div class="call-us">
+            Call us:
+          </div>
+          <div class="telephone">
+            Tel. 0800 066 5972
+          </div>
+          <div class="operating-mode">
+            (Monday- Fraday 9.30 am-4.30pm)
           </div>
         </div>
-        <div class="header-info-right">
-          <div class="cart-items">
-            <img src="./img/cart.png" class="cart">
-            <div class="header-info-text-right">
-              Cart: 0 items-
-            </div>
-            <i class="fas fa-pound-sign"></i>
-            <div class="zero">
-              0.00
-            </div>
+      </div>
+      <div class="header-info__right">
+        <div class="header-info__right--items">
+          <i class="fas fa-shopping-cart header-info__pdr"></i> 
+          <div class="items-text header-info__pdr">
+            Cart: 0 items -
           </div>
-          <div class="search">
-            search
-            <i class="fas fa-search"></i>
+          <i class="fas fa-pound-sign header-info__pdr"></i>
+          <div class="items-zero header-info__pdr">
+            0.00
           </div>
         </div>
-      </section>
-      <section class="header-menu">
+        <div class="search">
+          search
+          <i class="fas fa-search"></i>
+        </div>
+      </div>
+    </section>
+    <div class="header-menuBg">
+      <section class="header-menu container">
         <div class="header-menu__text">
-          <div class="about-us">
-            About us
+          <div class="header-menu__text--aboutUs header-menu__pdr">
+            About Us
           </div>
-          <div class="catalogue">
+          <div class="header-menu__text--catalogue header-menu__pdr">
             Catalogue
           </div>
-          <div class="season-specials">
+          <div class="header-menu__text--seasonSpecials header-menu__pdr">
             Season specials
           </div>
-          <div class="blog">
+          <div class="header-menu__text--blog header-menu__pdr">
             Blog
           </div>
         </div>
       </section>
-    </header>
-    <div class="main-content">
-      <section class="carousel">
-        <div class="splide">
-          <div class="splide__track">
-            <ul class="splide__list">
-              <li class="splide__slide">
-                <img src="./img/banner/banner-1.jpg" alt="">
-              </li>
-              <li class="splide__slide">
-                <img src="./img/banner/banner-2.jpg" alt="">
-              </li>
-              <li class="splide__slide">
-                <img src="./img/banner/banner-3.jpg" alt="">
-              </li>
-            </ul>
+    </div>
+  </header>
+  <div class="main-content">
+    <section class="carousel">
+      <div class="splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <img src="./img/banner/banner-1.jpg" alt="">
+            </li>
+            <li class="splide__slide">
+              <img src="./img/banner/banner-2.jpg" alt="">
+            </li>
+            <li class="splide__slide">
+              <img src="./img/banner/banner-3.jpg" alt="">
+            </li>
+          </ul>
+        </div>
+      </div>
+      <script>
+        new Splide( '.splide', {
+          arrows: false
+        } ).mount();
+      </script>
+      <div class="carousel-text">
+        <div class="carousel-text__top">
+          Check out our season
+        </div>
+        <div class="carousel-text__bottom">
+          <div class="specials-for">
+            specials for
+          </div>
+          <div class="half-price">
+            half-price
           </div>
         </div>
-        <script>
-          new Splide( '.splide', {
-            arrows: false
-          } ).mount();
-        </script>
-        <div class="carousel-text">
-          <div class="carousel-text__top">
-            Check out our season
-          </div>
-          <div class="carousel-text__bottom">
-            <div class="specials-for">
-              specials for
-            </div>
-            <div class="half-price">
-              half-price
-            </div>
-          </div>
-          <button class="carousel-text__button">
-            Learn more
-          </button>
-        </div>
-      </section>
-      <section class="featured-collection">
-        <h3>Featured-collection</h3>
-        <div class="four-columns">
-           <div class="four-columns__item">
-            @@include('./partials/collection-card/_collection-card.html',
-            {
-              "imgPath": "./img/collection-card/sango-kaku.jpg" ,
-              "cardDescription1": "Acer-palmatum-Sangokaku",
-              "cardDescription2": "(Coral Bark Maple)",
-              "cardPrice": "34.99"
-            })
-          </div>
-          <div class="four-columns__item">
-            @@include('./partials/collection-card/_collection-card.html',
-            {
-              "imgPath": "./img/collection-card/bluecrop.jpg" ,
-              "cardDescription1": "Acer-palmatum-Sangokaku",
-              "cardDescription2": "(Coral Bark Maple)",
-              "cardPrice": "34.99"
-            })
-          </div>
-          <div class="four-columns__item">
-            @@include('./partials/collection-card/_collection-card.html',
-            {
-              "imgPath": "./img/collection-card/pinus-sylvestris.jpg" ,
-              "cardDescription1": "Acer-palmatum-Sangokaku",
-              "cardDescription2": "(Coral Bark Maple)",
-              "cardPrice": "34.99"
-            })
-          </div>
-          <div class="four-columns__item">
-            @@include('./partials/collection-card/_collection-card.html',
-            {
-              "imgPath": "./img/collection-card/halls-giant.jpg" ,
-              "cardDescription1": "Acer-palmatum-Sangokaku",
-              "cardDescription2": "(Coral Bark Maple)",
-              "cardPrice": "34.99"
-            })
-          </div>
-        </div>
-      </section>
-      <section class="best-sellers">
-        <h3>Best Sellers</h3>
-        <div class="four-columns">
-          <div class="four-columns__item">
-           @@include('./partials/collection-card/_collection-card.html',
-           {
-             "imgPath": "./img/collection-card/pruns-victoria.jpg" ,
-             "cardDescription1": "Pruns Victoria",
-             "cardDescription2": "Victoria Prun Tree",
-             "cardPrice": "34.99"
-           })
-          </div>
-          <div class="four-columns__item">
-           @@include('./partials/collection-card/_collection-card.html',
-           {
-             "imgPath": "./img/collection-card/Syringa-louis-spaeth2.jpg" ,
-             "cardDescription1": "Syringa souvenir de louls",
-             "cardDescription2": "(Coral Bark Maple)",
-             "cardPrice": "34.99"
-           })
-          </div>
-          <div class="four-columns__item">
-           @@include('./partials/collection-card/_collection-card.html',
-           {
-             "imgPath": "./img/collection-card/Medlar-nottingham-fruit.jpg" ,
-             "cardDescription1": "Medlar nottingham fruit",
-             "cardDescription2": "(Coral Bark Maple)",
-             "cardPrice": "14.99"
-           })
-          </div>
-          <div class="four-columns__item">
-           @@include('./partials/collection-card/_collection-card.html',
-           {
-             "imgPath": "./img/collection-card/Arbutus-unedo-Fruit.jpg" ,
-             "cardDescription1": "Arbutus unedo Fruit",
-             "cardDescription2": "(Coral Bark Maple)",
-             "cardPrice": "34.99"
-           })
-          </div>
-          <div class="four-columns__item">
+        <button class="carousel-text__button">
+          Learn more
+        </button>
+      </div>
+    </section>
+    <section class="featured-collection">
+      <h3>Featured-collection</h3>
+      <div class="four-columns">
+         <div class="four-columns__item">
           @@include('./partials/collection-card/_collection-card.html',
           {
             "imgPath": "./img/collection-card/sango-kaku.jpg" ,
             "cardDescription1": "Acer-palmatum-Sangokaku",
             "cardDescription2": "(Coral Bark Maple)",
-            "cardPrice": "34.99"
+            "cardPriceRed": "34.99",
+            "cardPriceGrey": "44.99"
           })
-          </div>
-          <div class="four-columns__item">
+        </div>
+        <div class="four-columns__item">
           @@include('./partials/collection-card/_collection-card.html',
           {
             "imgPath": "./img/collection-card/bluecrop.jpg" ,
             "cardDescription1": "Acer-palmatum-Sangokaku",
             "cardDescription2": "(Coral Bark Maple)",
-            "cardPrice": "34.99"
+            "cardPriceRed": "34.99",
+            "cardPriceGrey": ""
           })
-          </div>
-          <div class="four-columns__item">
+        </div>
+        <div class="four-columns__item">
           @@include('./partials/collection-card/_collection-card.html',
           {
             "imgPath": "./img/collection-card/pinus-sylvestris.jpg" ,
             "cardDescription1": "Acer-palmatum-Sangokaku",
             "cardDescription2": "(Coral Bark Maple)",
-            "cardPrice": "34.99"
+            "cardPriceRed": "34.99",
+            "cardPriceGrey": "44.99"
           })
-          </div>
-          <div class="four-columns__item">
+        </div>
+        <div class="four-columns__item">
           @@include('./partials/collection-card/_collection-card.html',
           {
             "imgPath": "./img/collection-card/halls-giant.jpg" ,
@@ -247,146 +176,230 @@
             "cardPriceRed": "34.99",
             "cardPriceGrey": "44.99"
           })
-          </div>
         </div>
-      </section>
-      <section class="choose-us">
-        <h3> Why Choose Us</h3>
-        <div class="three-columns">
-          <div class="three-columns__item">
-            <div class="choose-us__header">
-              <div class="choose-us__header--img">
-                <i class="fas fa-check fa-2x pictures"></i>
-              </div>
-              <span class="choose-us__header--text">
-                High quality product
-              </span>
+      </div>
+    </section>
+    <section class="best-sellers">
+      <h3>Best Sellers</h3>
+      <div class="four-columns">
+        <div class="four-columns__item">
+         @@include('./partials/collection-card/_collection-card.html',
+         {
+           "imgPath": "./img/collection-card/pruns-victoria.jpg" ,
+           "cardDescription1": "Pruns Victoria",
+           "cardDescription2": "Victoria Prun Tree",
+           "cardPriceRed": "34.99",
+           "cardPriceGrey": ""
+         })
+        </div>
+        <div class="four-columns__item">
+         @@include('./partials/collection-card/_collection-card.html',
+         {
+           "imgPath": "./img/collection-card/Syringa-louis-spaeth2.jpg" ,
+           "cardDescription1": "Syringa souvenir de louls",
+           "cardDescription2": "(Coral Bark Maple)",
+           "cardPriceRed": "34.99",
+           "cardPriceGrey": ""
+         })
+        </div>
+        <div class="four-columns__item">
+         @@include('./partials/collection-card/_collection-card.html',
+         {
+           "imgPath": "./img/collection-card/Medlar-nottingham-fruit.jpg" ,
+           "cardDescription1": "Medlar nottingham fruit",
+           "cardDescription2": "(Coral Bark Maple)",
+           "cardPriceRed": "14.99",
+           "cardPriceGrey": ""
+         })
+        </div>
+        <div class="four-columns__item">
+         @@include('./partials/collection-card/_collection-card.html',
+         {
+           "imgPath": "./img/collection-card/Arbutus-unedo-Fruit.jpg" ,
+           "cardDescription1": "Arbutus unedo Fruit",
+           "cardDescription2": "(Coral Bark Maple)",
+           "cardPriceRed": "34.99",
+           "cardPriceGrey": ""
+         })
+        </div>
+        <div class="four-columns__item">
+        @@include('./partials/collection-card/_collection-card.html',
+        {
+          "imgPath": "./img/collection-card/sango-kaku.jpg" ,
+          "cardDescription1": "Acer-palmatum-Sangokaku",
+          "cardDescription2": "(Coral Bark Maple)",
+          "cardPriceRed": "34.99",
+          "cardPriceGrey": "44.99"
+        })
+        </div>
+        <div class="four-columns__item">
+        @@include('./partials/collection-card/_collection-card.html',
+        {
+          "imgPath": "./img/collection-card/bluecrop.jpg" ,
+          "cardDescription1": "Acer-palmatum-Sangokaku",
+          "cardDescription2": "(Coral Bark Maple)",
+          "cardPriceRed": "34.99",
+          "cardPriceGrey": ""
+        })
+        </div>
+        <div class="four-columns__item">
+        @@include('./partials/collection-card/_collection-card.html',
+        {
+          "imgPath": "./img/collection-card/pinus-sylvestris.jpg" ,
+          "cardDescription1": "Acer-palmatum-Sangokaku",
+          "cardDescription2": "(Coral Bark Maple)",
+          "cardPriceRed": "34.99",
+          "cardPriceGrey": "44.99"
+        })
+        </div>
+        <div class="four-columns__item">
+        @@include('./partials/collection-card/_collection-card.html',
+        {
+          "imgPath": "./img/collection-card/halls-giant.jpg" ,
+          "cardDescription1": "Acer-palmatum-Sangokaku",
+          "cardDescription2": "(Coral Bark Maple)",
+          "cardPriceRed": "34.99",
+          "cardPriceGrey": "44.99"
+        })
+        </div>
+      </div>
+    </section>
+    <section class="choose-us">
+      <h3> Why Choose Us</h3>
+      <div class="three-columns">
+        <div class="three-columns__item">
+          <div class="choose-us__header">
+            <div class="choose-us__header--img">
+              <i class="fas fa-check fa-2x pictures"></i>
             </div>
-            <div class="choose-us__content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus voluptatibus accusantium placeat. Provident sed, error quas rerum autem deleniti temporibus voluptatibus impedit ullam voluptatum quibusdam repudiandae quae nisi est pariatur!
+            <span class="choose-us__header--text">
+              High quality product
+            </span>
+          </div>
+          <div class="choose-us__content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus voluptatibus accusantium placeat. Provident sed, error quas rerum autem deleniti temporibus voluptatibus impedit ullam voluptatum quibusdam repudiandae quae nisi est pariatur!
+          </div>
+        </div>
+        <div class="three-columns__item">
+          <div class="choose-us__header">
+            <div class="choose-us__header--img">
+              <i class="fas fa-truck fa-2x  pictures"></i>
             </div>
+            <span class="choose-us__header--text">
+              Free Shipping
+            </span>
           </div>
-          <div class="three-columns__item">
-            <div class="choose-us__header">
-              <div class="choose-us__header--img">
-                <i class="fas fa-truck fa-2x  pictures"></i>
-              </div>
-              <span class="choose-us__header--text">
-                Free Shipping
-              </span>
+          <div class="choose-us__content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus voluptatibus accusantium placeat. Provident sed, error quas rerum autem deleniti temporibus voluptatibus impedit ullam voluptatum quibusdam repudiandae quae nisi est pariatur!
+          </div>
+        </div>
+        <div class="three-columns__item">
+          <div class="choose-us__header">
+            <div class="choose-us__header--img">
+              <i class="fas fa-lock fa-2x pictures"></i>
             </div>
-            <div class="choose-us__content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus voluptatibus accusantium placeat. Provident sed, error quas rerum autem deleniti temporibus voluptatibus impedit ullam voluptatum quibusdam repudiandae quae nisi est pariatur!
-            </div>
+            <span class="choose-us__header--text">
+              Sequre Online shopping
+            </span>
           </div>
-          <div class="three-columns__item">
-            <div class="choose-us__header">
-              <div class="choose-us__header--img">
-                <i class="fas fa-lock fa-2x pictures"></i>
-              </div>
-              <span class="choose-us__header--text">
-                Sequre Online shopping
-              </span>
-            </div>
-            <div class="choose-us__content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus voluptatibus accusantium placeat. Provident sed, error quas rerum autem deleniti temporibus voluptatibus impedit ullam voluptatum quibusdam repudiandae quae nisi est pariatur!
-            </div>
+          <div class="choose-us__content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus voluptatibus accusantium placeat. Provident sed, error quas rerum autem deleniti temporibus voluptatibus impedit ullam voluptatum quibusdam repudiandae quae nisi est pariatur!
           </div>
         </div>
-      </section>
-    </div>
-    <footer class="footer">
-      <footer class="footer-menu">
-        <div class="footer-menu__text">
-          sign up for our newsletter
-        </div>
-        <div class="footer-menu__signUp">
-          <form action="/test">
-            <input type="text" class="footer-menu__signUp--input" placeholder="Enter your e-mail">
-            <input type="submit" value="Sign up" class="footer-menu__signUp--btn">
-          </form>
-        </div>
-        <div class="footer-menu__socialNetworks">
-          <div class="footer-menu__socialNetworks--google">
-            <i class="fab fa-google-plus-g fa-2x"></i>
-          </div>
-        </div>
-      </footer>
-      <footer class="footer-info">
-        <div class="footer-info__content item">
-          <div class="footer-info__content--img">
-            <img src="./img/logo-grey.jpg"  class="logo-grey__img1"  alt="">
-            <div class="antivirus"> 
-              <img src="./img/antivirus.jpg"  class="antivirus__img2" alt="">
-            </div>
-          </div>
-          <p class="footer-info__content--text">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus reiciendis, dolor quas quasi quisquam voluptates rem cumque iusto culpa, tempore cupiditate adipisci pariatur amet accusantium in laborum vel ducimus sit.
-          </p>
-        </div>
-        <div class="footer-info__information item">
-          <h4>
-            Information
-          </h4>
-          <div class="footer-info__information--links">
-            <a href="#" class="links">
-              About us
-            </a>
-            <a href="#" class="links">
-              Delivery Information
-            </a>
-            <a href="#" class="links">
-              Privacy Policy
-            </a>
-            <a href="#" class="links">
-              Terms Conditions
-            </a>
-            <a href="#" class="links">
-              Recent Testimonials
-            </a>
-          </div>
-        </div>
-        <div class="footer-info__service item">
-          <h4>
-            Customer Service
-          </h4>
-          <div class="footer-info__information--links">
-            <a href="#" class="links">
-              Returns
-            </a>
-            <a href="#" class="links">
-              Blog
-            </a>
-            <a href="#" class="links">
-              Truspilot
-            </a>
-            <a href="#" class="links">
-              Gift Vouchers
-            </a>
-            <a href="#" class="links">
-              People Testimonials
-            </a>
-          </div>
-        </div>
-        <div class="footer-info__company item">
-          <h4>
-            Company Info
-          </h4>
-          <div class="footer-info__company--adres">
-            Mail Order Trees, 42 Station Road, Foedham, Ely, Cambs CB75LW
-          </div>
-          <div class="footer-info__company--email">
-            <div class="email-text">
-              Email:
-            </div>
-            <a href="#" class="links">
-              mailordertrees.co.uk
-            </a>
-          </div>
-        </div>
-      </footer>
-    </footer>
+      </div>
+    </section>
   </div>
+  <footer class="footer">
+    <footer class="footer-menu">
+      <div class="footer-menu__text">
+        sign up for our newsletter
+      </div>
+      <div class="footer-menu__signUp">
+        <form action="/test">
+          <input type="text" class="footer-menu__signUp--input" placeholder="Enter your e-mail">
+          <input type="submit" value="Sign up" class="footer-menu__signUp--btn">
+        </form>
+      </div>
+      <div class="footer-menu__socialNetworks">
+        <div class="footer-menu__socialNetworks--google">
+          <i class="fab fa-google-plus-g fa-2x"></i>
+        </div>
+      </div>
+    </footer>
+    <footer class="footer-info">
+      <div class="footer-info__content item">
+        <div class="footer-info__content--img">
+          <img src="./img/logo-grey.jpg"  class="logo-grey__img1"  alt="">
+          <div class="antivirus"> 
+            <img src="./img/antivirus.jpg"  class="antivirus__img2" alt="">
+          </div>
+        </div>
+        <p class="footer-info__content--text">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus reiciendis, dolor quas quasi quisquam voluptates rem cumque iusto culpa, tempore cupiditate adipisci pariatur amet accusantium in laborum vel ducimus sit.
+        </p>
+      </div>
+      <div class="footer-info__information item">
+        <h4>
+          Information
+        </h4>
+        <div class="footer-info__information--links">
+          <a href="#" class="links">
+            About us
+          </a>
+          <a href="#" class="links">
+            Delivery Information
+          </a>
+          <a href="#" class="links">
+            Privacy Policy
+          </a>
+          <a href="#" class="links">
+            Terms Conditions
+          </a>
+          <a href="#" class="links">
+            Recent Testimonials
+          </a>
+        </div>
+      </div>
+      <div class="footer-info__service item">
+        <h4>
+          Customer Service
+        </h4>
+        <div class="footer-info__information--links">
+          <a href="#" class="links">
+            Returns
+          </a>
+          <a href="#" class="links">
+            Blog
+          </a>
+          <a href="#" class="links">
+            Truspilot
+          </a>
+          <a href="#" class="links">
+            Gift Vouchers
+          </a>
+          <a href="#" class="links">
+            People Testimonials
+          </a>
+        </div>
+      </div>
+      <div class="footer-info__company item">
+        <h4>
+          Company Info
+        </h4>
+        <div class="footer-info__company--adres">
+          Mail Order Trees, 42 Station Road, Foedham, Ely, Cambs CB75LW
+        </div>
+        <div class="footer-info__company--email">
+          <div class="email-text">
+            Email:
+          </div>
+          <a href="#" class="links">
+            mailordertrees.co.uk
+          </a>
+        </div>
+      </div>
+    </footer>
+  </footer>
 </body>
 </html>
 
