@@ -6,12 +6,17 @@
         &--img {
             height: 50px;
             width: 50px;
+            color: white;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-color: black;
+
         }
 
         &--text {
             padding-left: 10px;
             text-transform: capitalize;
-            font-size: 18px;
+            // font-size: 18px;
         }
     }
 
