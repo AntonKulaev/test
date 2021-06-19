@@ -6,7 +6,7 @@ body * {
 }
 
 .e-shop {
-  max-width: 935px;
+  max-width: 1200px;
 }
 // HEADER BEHAVIOR
 
@@ -121,6 +121,14 @@ body * {
 }
 
 // WHY CHOOSE US
+.choose-us {
+  padding: 0 30px;
+  margin-bottom: 50px;
+
+  & h3 {
+    padding: 40px 0 30px 0 ;
+  }
+}
 
 .three-columns {
   display: flex;
@@ -130,8 +138,9 @@ body * {
     flex-basis: 33.33%;
     padding: 0 10px;
 
-    & .quality-header {
+    & .choose-us__header {
       display: flex;
+      padding-bottom: 15px;
 
       &--img {
         position: relative;
@@ -154,10 +163,13 @@ body * {
         display: flex;
         align-items: center;
         text-transform: capitalize;
+        padding-left: 10px;
+        font-size: 18px;
+        font-weight: 600;
       }
     }
 
-    & .quality-content {
+    & .choose-us__content {
       text-align: justify;
     }
   }
@@ -167,19 +179,29 @@ body * {
 
 .footer-menu {
   display: flex;
-  background-color: black;
+  background-color: rgb(27, 24, 24);
+  padding: 10px 30px;
 
   &__text {
+    display: flex;
+    align-items: center;
+    padding-right: 25px;
+    font-size: 18px;
     text-transform: capitalize;
     color: white;
   }
 
   &__signUp {
+    padding-right: 60px;
 
     &--btn {
       padding: 3px 15px;
       color: white;
       background-color:orange;
+    }
+
+    &--input {
+      padding: 3px 15px;
     }
   }
 
@@ -188,10 +210,22 @@ body * {
     height: 30px;
     width: 30px;
 
-    &--small{
-      z-index: 2;
-      color: white;
+    &--google {
+      height: 34px;
+      width: 34px;
+      position: relative;
+
+      & .fa-google-plus-g {
+        position: absolute;
+        color: white;
+        padding-right: 20px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
     }
+
+    
   }
 }
 
@@ -209,10 +243,23 @@ body * {
 
     
     &--img {
-      padding-bottom: 20px;
+      display: flex;
+      padding: 0px 5px 15px 5px;
 
-      &--img1 {
-        padding-right: 5px;
+      & .logo-grey__img1 {
+        width: 60%;
+        height: 60%;
+      }
+
+      & .antivirus {
+        position: relative;
+        bottom: 0px;
+        left: 5%;
+
+        &__img2 {
+          position: absolute;
+          bottom: 0px;
+        }
       }
     }
 
@@ -222,29 +269,33 @@ body * {
   }
 
   &__information {
-     
+    margin-left: 25px;
+
     &--links {
       display: flex;
       flex-direction: column;
     }
   }
+
+  &__service {
+    margin-left: 25px;
+  }
+
+  &__company {
+    margin-left: 25px;
+
+    &--email {
+      display: flex;
+      flex-direction: column;
+
+      & .email-text {
+        display: block;
+      }
+    }
+  }
 }
 
-.test {
-  position: relative;
-  width: 50px;
-  height: 50px;
-  // background-color: blac;
-  // padding: calc(50% - 5px);
-  border-radius: 50%;
-  border: 1px solid red;
-  background-color: black;
-
-  & .fa-check {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-  }
+.links {
+  color: black;
+  text-decoration: none;
 }

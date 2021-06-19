@@ -244,7 +244,8 @@
             "imgPath": "./img/collection-card/halls-giant.jpg" ,
             "cardDescription1": "Acer-palmatum-Sangokaku",
             "cardDescription2": "(Coral Bark Maple)",
-            "cardPrice": "34.99"
+            "cardPriceRed": "34.99",
+            "cardPriceGrey": "44.99"
           })
           </div>
         </div>
@@ -253,41 +254,41 @@
         <h3> Why Choose Us</h3>
         <div class="three-columns">
           <div class="three-columns__item">
-            <div class="quality-header">
-              <div class="quality-header--img">
+            <div class="choose-us__header">
+              <div class="choose-us__header--img">
                 <i class="fas fa-check fa-2x pictures"></i>
               </div>
-              <h5 class="quality-header--text">
+              <span class="choose-us__header--text">
                 High quality product
-              </h5>
+              </span>
             </div>
-            <div class="quality-content">
+            <div class="choose-us__content">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus voluptatibus accusantium placeat. Provident sed, error quas rerum autem deleniti temporibus voluptatibus impedit ullam voluptatum quibusdam repudiandae quae nisi est pariatur!
             </div>
           </div>
           <div class="three-columns__item">
-            <div class="quality-header">
-              <div class="quality-header--img">
+            <div class="choose-us__header">
+              <div class="choose-us__header--img">
                 <i class="fas fa-truck fa-2x  pictures"></i>
               </div>
-              <h5 class="quality-header--text">
+              <span class="choose-us__header--text">
                 Free Shipping
-              </h5>
+              </span>
             </div>
-            <div class="quality-content">
+            <div class="choose-us__content">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus voluptatibus accusantium placeat. Provident sed, error quas rerum autem deleniti temporibus voluptatibus impedit ullam voluptatum quibusdam repudiandae quae nisi est pariatur!
             </div>
           </div>
           <div class="three-columns__item">
-            <div class="quality-header">
-              <div class="quality-header--img">
+            <div class="choose-us__header">
+              <div class="choose-us__header--img">
                 <i class="fas fa-lock fa-2x pictures"></i>
               </div>
-              <h5 class="quality-header--text">
+              <span class="choose-us__header--text">
                 Sequre Online shopping
-              </h5>
+              </span>
             </div>
-            <div class="quality-content">
+            <div class="choose-us__content">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus voluptatibus accusantium placeat. Provident sed, error quas rerum autem deleniti temporibus voluptatibus impedit ullam voluptatum quibusdam repudiandae quae nisi est pariatur!
             </div>
           </div>
@@ -296,29 +297,28 @@
     </div>
     <footer class="footer">
       <footer class="footer-menu">
-        <h4 class="footer-menu__text">
+        <div class="footer-menu__text">
           sign up for our newsletter
-        </h4>
+        </div>
         <div class="footer-menu__signUp">
           <form action="/test">
-            <input type="text">
+            <input type="text" class="footer-menu__signUp--input" placeholder="Enter your e-mail">
             <input type="submit" value="Sign up" class="footer-menu__signUp--btn">
           </form>
         </div>
         <div class="footer-menu__socialNetworks">
-          <i class="fab fa-google-plus-square"></i>
-          <i class="fab fa-google-plus-square"></i>
-          <img src="./img/google.png"  class="footer-menu__socialNetworks--small" alt="Google+" >
-          <img src="./img/pintarest.png" class="footer-menu__socialNetworks--small" alt="Pintarest">
-          <img src="./img/twitter.png"class="footer-menu__socialNetworks--small"  alt="Twitter">
-          <img src="./img/facebook.png" class="footer-menu__socialNetworks--small" alt="Facebook">
+          <div class="footer-menu__socialNetworks--google">
+            <i class="fab fa-google-plus-g fa-2x"></i>
+          </div>
         </div>
       </footer>
       <footer class="footer-info">
         <div class="footer-info__content item">
           <div class="footer-info__content--img">
-            <img src="./img/logo-grey.jpg"  class="footer-info__content--img1"  alt="">
-            <img src="./img/antivirus.jpg" class="footer-info__content--img2" alt="">
+            <img src="./img/logo-grey.jpg"  class="logo-grey__img1"  alt="">
+            <div class="antivirus"> 
+              <img src="./img/antivirus.jpg"  class="antivirus__img2" alt="">
+            </div>
           </div>
           <p class="footer-info__content--text">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus reiciendis, dolor quas quasi quisquam voluptates rem cumque iusto culpa, tempore cupiditate adipisci pariatur amet accusantium in laborum vel ducimus sit.
@@ -329,19 +329,19 @@
             Information
           </h4>
           <div class="footer-info__information--links">
-            <a href="#">
+            <a href="#" class="links">
               About us
             </a>
-            <a href="#">
+            <a href="#" class="links">
               Delivery Information
             </a>
-            <a href="#">
+            <a href="#" class="links">
               Privacy Policy
             </a>
-            <a href="#">
+            <a href="#" class="links">
               Terms Conditions
             </a>
-            <a href="#">
+            <a href="#" class="links">
               Recent Testimonials
             </a>
           </div>
@@ -351,19 +351,19 @@
             Customer Service
           </h4>
           <div class="footer-info__information--links">
-            <a href="#">
+            <a href="#" class="links">
               Returns
             </a>
-            <a href="#">
+            <a href="#" class="links">
               Blog
             </a>
-            <a href="#">
+            <a href="#" class="links">
               Truspilot
             </a>
-            <a href="#">
+            <a href="#" class="links">
               Gift Vouchers
             </a>
-            <a href="#">
+            <a href="#" class="links">
               People Testimonials
             </a>
           </div>
@@ -376,17 +376,16 @@
             Mail Order Trees, 42 Station Road, Foedham, Ely, Cambs CB75LW
           </div>
           <div class="footer-info__company--email">
-            Email:
-            <a href="mailordertrees.co.uk">
+            <div class="email-text">
+              Email:
+            </div>
+            <a href="#" class="links">
               mailordertrees.co.uk
             </a>
           </div>
         </div>
       </footer>
     </footer>
-  </div>
-  <div class="test">
-    <i class="fas fa-check fa-2x"></i>
   </div>
 </body>
 </html>

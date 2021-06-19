@@ -4,16 +4,29 @@
     border: 1px solid lightgrey;
     
     &__img {
-        width: 192px;
+        width: 201px;
         height: 156px;
     }
 
     & .card-content {
 
         &__price {
-            padding: 5px 0;
-            color: red;
+            display: flex;
+
+            &--red {
+                color: red;
+                padding-right: 5px;
+            }
+
+            &--grey {
+                color: grey;
+                text-decoration: line-through;
+            }
         }
+    }
+
+    .card-content__price {
+        display: flex;
     }
 
     & .submit-btn {
