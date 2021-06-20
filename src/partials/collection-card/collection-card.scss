@@ -1,11 +1,11 @@
 .collection-card{
     margin: 10px;
-    padding: 5px;
+    padding: 10px;
     border: 1px solid lightgrey;
 
     & .wrapper {
-        width: 268px;
-        height: 238px;
+        width: 258px;
+        height: 228px;
     }
     
     &__img {
@@ -57,7 +57,7 @@
     & .submit-btn {
         display: flex;
         justify-content: space-between;
-        font-size: 18px;
+        font-size: 20px;
 
         & .card-button {
             background-color: white;

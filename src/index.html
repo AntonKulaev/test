@@ -186,7 +186,9 @@
       </div>
     </section>
     <section class="best-sellers">
-      <h3>Best Sellers</h3>
+      <h3 class="best-sellers__header">
+        Best Sellers
+      </h3>
       <div class="four-columns">
         <div class="four-columns__item">
          @@include('./partials/collection-card/_collection-card.html',
@@ -316,23 +318,34 @@
     </section>
   </div>
   <footer class="footer">
-    <footer class="footer-menu">
-      <div class="footer-menu__text">
-        sign up for our newsletter
-      </div>
-      <div class="footer-menu__signUp">
-        <form action="/test">
-          <input type="text" class="footer-menu__signUp--input" placeholder="Enter your e-mail">
-          <input type="submit" value="Sign up" class="footer-menu__signUp--btn">
-        </form>
-      </div>
-      <div class="footer-menu__socialNetworks">
-        <div class="footer-menu__socialNetworks--google">
-          <i class="fab fa-google-plus-g fa-2x"></i>
+    <div class="footer-bg">
+      <footer class="footer-menu container-shop">
+        <div class="footer-menu__text">
+          sign up for our newsletter
         </div>
-      </div>
-    </footer>
-    <footer class="footer-info">
+        <div class="footer-menu__signUp">
+          <form action="/test">
+            <input type="text" class="footer-menu__signUp--input" placeholder="Enter your e-mail">
+            <input type="submit" value="Sign up" class="footer-menu__signUp--btn">
+          </form>
+        </div>
+        <div class="footer-menu__socialNetworks">
+          <div class="footer-menu__socialNetworks--wrapper">
+            <i class="fab fa-google-plus-g fa-2x socialNetworks-icon"></i>
+          </div>
+          <div class="footer-menu__socialNetworks--wrapper">
+            <i class="fab fa-pinterest-p fa-2x socialNetworks-icon"></i>
+          </div>
+          <div class="footer-menu__socialNetworks--wrapper">
+            <i class="fab fa-twitter fa-2x socialNetworks-icon"></i>
+          </div>
+          <div class="footer-menu__socialNetworks--wrapper">
+            <i class="fab fa-facebook-f fa-2x socialNetworks-icon"></i>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <footer class="footer-info container-shop">
       <div class="footer-info__content item">
         <div class="footer-info__content--img">
           <img src="./img/logo-grey.jpg"  class="logo-grey__img1"  alt="">
@@ -345,9 +358,9 @@
         </p>
       </div>
       <div class="footer-info__information item">
-        <h4>
+        <span>
           Information
-        </h4>
+        </span>>
         <div class="footer-info__information--links">
           <a href="#" class="links">
             About us

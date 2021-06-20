@@ -209,7 +209,11 @@ body * {
 //  COLLECTION CARD
 
 .featured-collection__header {
-  padding: 50px 0 20px 0;
+  padding: 50px 0 20px 5px;
+}
+
+.best-sellers__header {
+  padding: 50px 0 20px 5px;
 }
 
 .four-columns {
@@ -224,11 +228,9 @@ body * {
 
 // WHY CHOOSE US
 .choose-us {
-  padding: 0 30px;
-  margin-bottom: 50px;
 
   & h3 {
-    padding: 40px 0 30px 0 ;
+    padding: 40px 0 30px 5px;
   }
 }
 
@@ -279,15 +281,19 @@ body * {
 
 // FOTTER 
 
+.footer-bg {
+  background-color: rgb(27, 24, 24);
+}
+
 .footer-menu {
   display: flex;
-  background-color: rgb(27, 24, 24);
-  padding: 10px 30px;
+  justify-content: center;
+  padding: 20px 40px;
 
   &__text {
     display: flex;
     align-items: center;
-    padding-right: 25px;
+    padding-right: 60px;
     font-size: 18px;
     text-transform: capitalize;
     color: white;
@@ -309,21 +315,16 @@ body * {
 
   &__socialNetworks {
     display: flex;
-    height: 30px;
-    width: 30px;
+    
 
-    &--google {
+    &--wrapper {
       height: 34px;
-      width: 34px;
-      position: relative;
+      width: 54px;
+      text-align: center;
+      
 
-      & .fa-google-plus-g {
-        position: absolute;
+      & .socialNetworks-icon {
         color: white;
-        padding-right: 20px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
       }
     }
 
@@ -334,7 +335,7 @@ body * {
 
 .footer-info {
   display: flex;
-  padding: 50px 30px 20px 30px;
+  padding-top: 50px;
   
   & .item {
     flex-basis: 25%;
@@ -371,7 +372,7 @@ body * {
   }
 
   &__information {
-    margin-left: 25px;
+    // margin-left: 25px;
 
     &--links {
       display: flex;
