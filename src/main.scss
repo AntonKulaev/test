@@ -236,16 +236,24 @@ body * {
 
   & .header-menu {
     font-family: 'Noto Sans JP', sans-serif;
-    padding: 30px 0;
     font-size: 26px;
 
     &__text {
       display: flex;
-      color: white;
-    }
 
-    & .header-menu__pdr {
-      padding-right: 50px;
+      & .header-menu__btn {
+        color: white;
+        border: 0px;
+        background-color: #1a1919;
+        padding: 15px 20px ;
+      }
+
+      & .header-menu__btn:hover {
+        color: black;
+        border: 0px;
+        background-color: white;
+        padding: 15px 20px ;
+      }
     }
   }
 }
@@ -292,6 +300,10 @@ body * {
           border: 1px solid white;
           cursor:pointer;
           overflow: hidden;
+        }
+
+        &--more:hover {
+          background-color: rgb(233, 225, 225);
         }
       }
     }
@@ -417,7 +429,6 @@ body * {
   &__socialNetworks {
     display: flex;
     
-
     &--wrapper {
       height: 34px;
       width: 54px;
@@ -426,6 +437,10 @@ body * {
 
       & .socialNetworks-icon {
         color: white;
+      }
+
+      & .socialNetworks-icon:hover {
+        color: red;
       }
     }
 
