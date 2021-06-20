@@ -2,16 +2,34 @@
     margin: 10px;
     padding: 5px;
     border: 1px solid lightgrey;
+
+    & .wrapper {
+        width: 268px;
+        height: 238px;
+    }
     
     &__img {
-        width: 201px;
-        height: 156px;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     & .card-content {
 
+        &__description1 {
+            padding-bottom: 3px;
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        &__description2 {
+            padding-bottom: 3px;
+            font-size: 18px;
+            font-weight: 400;
+        }
+
         &__price {
             display: flex;
+            padding-bottom: 10px;
 
             &--red {
                 color: red;

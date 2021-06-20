@@ -5,6 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./main.scss">
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js" integrity="sha256-SmCcbf/1ehhlBnw3ZGinNu6fjQV471LDBjc4yMMJhsk=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/splide.min.css" integrity="sha256-EqzwzekQXKNbB5EE4nNBQT+2gWQIWRZQXAd89YdIq8M=" crossorigin="anonymous">
@@ -95,19 +97,19 @@
       </section>
     </div>
   </header>
-  <div class="main-content">
+  <div class="main-content container-shop">
     <section class="carousel">
       <div class="splide">
         <div class="splide__track">
           <ul class="splide__list">
             <li class="splide__slide">
-              <img src="./img/banner/banner-1.jpg" alt="">
+              <img src="./img/banner/banner1.jpg" alt="">
             </li>
             <li class="splide__slide">
-              <img src="./img/banner/banner-2.jpg" alt="">
+              <img src="./img/banner/banner2.jpg" alt="">
             </li>
             <li class="splide__slide">
-              <img src="./img/banner/banner-3.jpg" alt="">
+              <img src="./img/banner/banner3.jpg" alt="">
             </li>
           </ul>
         </div>
@@ -126,16 +128,20 @@
             specials for
           </div>
           <div class="half-price">
-            half-price
+            half-price!
           </div>
         </div>
-        <button class="carousel-text__button">
-          Learn more
-        </button>
+        <div class="carousel-text__button">
+          <button class="carousel-text__button--more">
+            Learn more
+          </button>
+        </div>
       </div>
     </section>
     <section class="featured-collection">
-      <h3>Featured-collection</h3>
+      <h3 class="featured-collection__header">
+        Featured-collection
+      </h3>
       <div class="four-columns">
          <div class="four-columns__item">
           @@include('./partials/collection-card/_collection-card.html',
