@@ -31,7 +31,7 @@ body * {
 
 .text-behavior__left {
   display: flex;
-  font-size: 16px;
+  font-size: 20px;
   font-family: sans-serif;
   text-transform: uppercase;
   font-weight: 600;
@@ -50,23 +50,84 @@ body * {
   align-items: center;
 
   &__checkmark {
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
   }
 }
 
 .reviews {
-  font-weight: bold;
-  font-size: 15px;
+  display: flex;
+
+  &-text {
+    font-weight: bold;
+    font-size: 18px;
+    padding-right: 10px;
+  }
+
+  & .rating-area {
+    overflow: hidden;
+    width: 120px;
+    margin: 0 auto;
+  }
+  & .rating-area:not(:checked) > input {
+    display: none;
+  }
+  & .rating-area:not(:checked) > label {
+    float: right;
+    width: 24px;
+    padding: 0;
+    cursor: pointer;
+    font-size: 24px;
+    line-height: 24px;
+    color: lightgrey;
+    text-shadow: 1px 1px #bbb;
+  }
+  & .rating-area:not(:checked) > label:before {
+    content: '★';
+  }
+  & .rating-area > input:checked ~ label {
+    color: gold;
+    text-shadow: 1px 1px #c60;
+  }
+  & .rating-area:not(:checked) > label:hover,
+  & .rating-area:not(:checked) > label:hover ~ label {
+    color: gold;
+  }
+  & .rating-area > input:checked + label:hover,
+  & .rating-area > input:checked + label:hover ~ label,
+  & .rating-area > input:checked ~ label:hover,
+  & .rating-area > input:checked ~ label:hover ~ label,
+  & .rating-area > label:hover ~ input:checked ~ label {
+    color: gold;
+    text-shadow: 1px 1px goldenrod;
+  }
+  & .rate-area > label:active {
+    position: relative;
+  }
 }
+
+
 
 .header-behavior__right {
   display: flex;
   font-weight: bold;
   align-items: center;
-
+  
   &--signup {
     padding-right: 30px;
+
+    & .sign-up__link {
+      color: black;
+      text-decoration: none;
+    }
+  }
+
+  &--signin {
+
+    & .sign-in__link {
+      color: black;
+      text-decoration: none;
+    }
   }
 }
 
@@ -125,7 +186,47 @@ body * {
   & .header-info__pdr {
     padding-right: 8px;
   }
+
+  &--bottom {
+    padding-top: 25px;
+
+    & .search-field {
+      position: relative;
+      width: 215px;
+      margin: 0 auto;
+      background: white;
+      border: 1px solid grey;
+    }
+    input, button {
+      border: none;
+      outline: none;
+      background: transparent;
+    }
+    input {
+      width: 100%;
+      height: 42px;
+      padding-left: 15px;
+    }
+    button {
+      height: 42px;
+      width: 42px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      cursor: pointer;
+    }
+    button:before {
+      content: "\f002";
+      font-family: FontAwesome;
+      font-size: 16px;
+      color: black;
+    }
+  }
 }
+
+// * {box-sizing: border-box;}
+
+
 
 
 // HEADER MENU
@@ -372,7 +473,7 @@ body * {
   }
 
   &__information {
-    // margin-left: 25px;
+    margin-left: 25px;
 
     &--links {
       display: flex;
@@ -381,11 +482,11 @@ body * {
   }
 
   &__service {
-    margin-left: 25px;
+    // margin-left: 25px;
   }
 
   &__company {
-    margin-left: 25px;
+    // margin-left: 25px;
 
     &--email {
       display: flex;
