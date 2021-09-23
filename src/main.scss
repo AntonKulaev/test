@@ -2,13 +2,29 @@ body * {
   outline: 1px solid lightgrey;
 }
 
-.content {
+.page-content {
+  text-align: center;
+}
+
+.footer-icons {
+  width: 600px;
+  height: 150px;
+  background-color: rgb(27, 25, 25);
   margin: 0 auto;
+  box-sizing: border-box;
+  padding: 30px;
+}
+
+.epam {
+  padding-bottom: 30px;
 }
 
 .social-networks {
-  width: 600px;
-  height: 200px;
-  background-color: rgb(27, 25, 25);
-  
+  display: flex;
+  justify-content: center;
+
+  &__icon {
+    padding-right: 5px;
+  }
 }
+
